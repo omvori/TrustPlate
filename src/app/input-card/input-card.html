@@ -1,0 +1,65 @@
+<div class="form_container">
+  <h2 [ngStyle]="{
+    marginRight:'10px'
+  }">Scrivi una Recensione</h2>
+
+  <form (ngSubmit)="inviaRecensione()"> 
+    <div class="form-group">
+      <label for="nome">Nome</label>
+      <input 
+        type="text" 
+        id="nome" 
+        [(ngModel)]="nome" 
+        name="nome"
+        class="form-control"
+        placeholder="Il tuo nome"
+        required>
+    </div>
+
+    
+
+    <div class="form-group">
+      <label for="cognome">Cognome</label>
+      <input 
+        type="text" 
+        id="cognome" 
+        [(ngModel)]="cognome" 
+        name="cognome"
+        class="form-control"
+        placeholder="Il tuo cognome"
+        required
+        [ngStyle]="{
+          marginRight:'10px'
+        }">
+    </div>
+
+    <div class="form-group">
+      <label for="recensione">Recensione</label>
+      <textarea 
+        id="recensione" 
+        [(ngModel)]="testoRecensione" 
+        name="testoRecensione"
+        class="form-control"
+        rows="4"
+        placeholder="Scrivi qui la tua recensione"
+        required
+        [ngStyle]="{
+          marginRight:'10px'
+        }"></textarea>
+    </div>
+
+    <button 
+      type="submit" 
+      class="btn-submit"
+      [disabled]="isSubmitting">
+      
+      <span *ngIf="!isSubmitting; else loading">
+        Pubblica Recensione
+      </span>
+      
+      <ng-template #loading>
+        Invio in corso.
+      </ng-template>
+    </button>
+  </form>
+</div>

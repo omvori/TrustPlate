@@ -1,0 +1,28 @@
+<div [ngStyle]="{
+    maxWidth:'400px',
+    display:'flex',
+    alignItems: 'center',
+}">
+
+</div>
+<div class="recensioni_cards">
+    <mat-card [ngStyle]="{
+        marginBottom: '50px',
+        width:'400px',
+        marginRight:'10px'
+      }"class="example-card" appearance="outlined">
+      <mat-card-header>
+        <mat-card-title-group >
+          <mat-card-title>{{reviewData?.name || 'Nome utente'}}</mat-card-title>
+        </mat-card-title-group>
+      </mat-card-header>
+
+
+      <mat-card-content>
+        {{reviewData?.text || 'Testo recensione'}}
+      </mat-card-content>
+    
+    
+    </mat-card>
+
+</div>

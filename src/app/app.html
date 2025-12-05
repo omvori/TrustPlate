@@ -1,0 +1,46 @@
+<div [ngStyle]="{
+  maxWidth:'1200px',
+  margin:'0',
+  padding:'20px'
+}"class="container_app">
+  <header [ngStyle]="{
+    textAlign: 'center',
+    padding:'30px',
+    marginBottom:'30px',
+    borderRadius:'15px',
+    color:'black',
+    boxShadow:'0 5px 15px rgba(0,0,0,0.1)'
+  }">
+    <div class="header">
+      <h1>Benvenuto nel RecenSito</h1>
+      <p>Lascia la tua recensione o consulta quelle degli altri</p>
+      <button (click)="removeReviews()">PREMI SOLO SE SAI QUELLO CHE FAI</button>
+    
+      </div>
+  </header>
+
+
+  <div [ngStyle]="{
+    display:'grid',
+    gridTemplateColumns:'1fr 2fr',
+    marginRight:'150px',
+    marginBottom:'40px',
+  }"class="main_content">
+    <app-input-card (newReview)="addReview($event)"></app-input-card>
+    <app-recensioni-cards *ngFor="let review of reviews" [reviewData]="review"></app-recensioni-cards>
+  </div>
+
+
+  <footer [ngStyle]="{
+    textAlign:'center',
+    padding:'20px',
+    marginTop:'40px',
+    borderTop:'1px solid',
+    color:'Red'
+  }"class="footer">
+    <p class="storage_info">
+      Numero review nel sito: {{reviews.length}}
+    </p>
+
+  </footer>
+</div>
