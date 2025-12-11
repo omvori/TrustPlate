@@ -1,37 +1,82 @@
 <div [ngStyle]="{
   maxWidth:'1200px',
-  margin:'0',
-  padding:'20px'
-}"class="container_app">
-  <header [ngStyle]="{
-    textAlign: 'center',
-    padding:'30px',
-    marginBottom:'30px',
-    borderRadius:'15px',
-    color:'black',
-    boxShadow:'0 5px 15px rgba(0,0,0,0.1)'
-  }">
-    <div class="header">
-      <h1>Benvenuto nel RecenSito</h1>
-      <p>Lascia la tua recensione o consulta quelle degli altri</p>
-      <button (click)="removeReviews()">PREMI SOLO SE SAI QUELLO CHE FAI</button>
+  margin:'0 auto',
+  padding:'40px 20px 20px', 
+  backgroundColor:'#f8f9fa', 
+  minHeight:'100vh', 
+  boxSizing:'border-box'
+}" class="container_app">
+<header [ngStyle]="{
+  textAlign: 'center',
+  padding:'40px 30px', 
+  marginBottom:'40px',
+  borderRadius:'15px',
+  color:'white', 
+  boxShadow:'0 px 30px rgba(0,0,0,0.15)', 
+  background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', 
+  transition: 'transform 0.3s ease' 
+}" class="header">
+  
+  <div class="header">
+    <h1 [ngStyle]="{
+      fontSize:'2.5rem',
+      marginBottom:'15px',
+      fontWeight:'700',
+      textShadow:'2px 2px 4px rgba(0,0,0,0.3)'
+    }">Benvenuto nel RecenSito</h1>
     
-      </div>
-  </header>
-
-
-  <div [ngStyle]="{
-    display:'grid',
-    gridTemplateColumns:'1fr 2fr',
-    marginRight:'150px',
-    marginBottom:'40px',
-  }"class="main_content">
-    <app-input-card (newReview)="addReview($event)"></app-input-card>
-    <app-recensioni-cards *ngFor="let review of reviews" [reviewData]="review"></app-recensioni-cards>
+    <p [ngStyle]="{
+      fontSize:'1.2rem',
+      opacity:'0.9',
+      maxWidth:'600px',
+      margin:'0 auto 25px'
+    }">Lascia la tua recensione o consulta quelle degli altri</p>
+    
+    <button [ngStyle]="{
+      padding:'12px 25px',
+      backgroundColor:'#ff4757',
+      color:'white',
+      border:'none',
+      borderRadius:'25px',
+      fontSize:'1rem',
+      fontWeight:'600',
+      cursor:'pointer',
+      transition:'all 0.3s ease',
+      boxShadow:'0 4px 15px rgba(255,71,87,0.4)'
+    }" 
+    (click)="removeReviews()">
+      PREMI SOLO SE SAI QUELLO CHE FAI
+    </button>
   </div>
+</header>
 
+<div [ngStyle]="{
+  display:'grid',
+  gridTemplateColumns:'1fr',
+  gap:'30px',
+  maxWidth:'800px',
+  margin:'0 auto'
+}" class="main_content">
+  
+  <div [ngStyle]="{
+    marginBottom:'0.5s'
+  }">
+    <app-input-card (newReview)="addReview($event)"></app-input-card>
+  </div>
+  
+  <div [ngStyle]="{
+    display:'flex',
+    flexDirection:'column',
+    gap:'25px'
+  }">
+    <app-recensioni-cards 
+      *ngFor="let review of reviews; let i = index" 
+      [reviewData]="review">
+    </app-recensioni-cards>
+  </div>
+</div>
 
-  <footer [ngStyle]="{
+ <!-- <footer [ngStyle]="{
     textAlign:'center',
     padding:'20px',
     marginTop:'40px',
@@ -42,5 +87,5 @@
       Numero review nel sito: {{reviews.length}}
     </p>
 
-  </footer>
+  </footer> -->
 </div>
