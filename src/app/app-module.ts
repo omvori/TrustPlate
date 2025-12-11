@@ -12,6 +12,7 @@ import {MatInputModule} from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { MatSidenavContent, MatSidenavContainer, MatSidenav } from "@angular/material/sidenav";
 import { ServizioProva } from './services/servizio-prova';
+import { MatChip } from "@angular/material/chips";
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { ServizioProva } from './services/servizio-prova';
     MatSidenavContent,
     MatSidenavContainer,
     MatSidenav,
-    InputCardComponent
+    InputCardComponent,
+    MatChip
 ],
   providers: [ServizioProva, 
     provideBrowserGlobalErrorListeners()

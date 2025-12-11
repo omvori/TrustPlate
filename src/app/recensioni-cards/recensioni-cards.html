@@ -13,13 +13,13 @@
       }"class="example-card" appearance="outlined">
       <mat-card-header>
         <mat-card-title-group >
-          <mat-card-title>{{reviewData?.name || 'Nome utente'}}</mat-card-title>
+          <mat-card-title>{{(reviewData?.nome || '') + ' ' + (reviewData?.cognome || '') || 'Nome utente'}}</mat-card-title>
         </mat-card-title-group>
       </mat-card-header>
 
 
       <mat-card-content>
-        {{reviewData?.text || 'Testo recensione'}}
+        {{reviewData?.testoRecensione || 'Testo recensione'}}
       </mat-card-content>
     
     

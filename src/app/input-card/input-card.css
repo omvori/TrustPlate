@@ -1,6 +1,185 @@
-.form_container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
+.form_container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #516eff;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #545869 0%, #764ba2 100%);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
+
+.header-container {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #545869 0%, #764ba2 100%);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.name-box{
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.05) ;
+  border-radius: 10px;
+  width: 100%;
+  height: 60px;
+  border:#764ba2;
+
+}
+
+.surname-box{
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.05) ;
+  border-radius: 10px;
+  width: 100%;
+  height: 60px;
+  border:#764ba2;
+
+}
+
+.rev-box{
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.05) ;
+  border-radius: 10px;
+  width: 100%;
+  height: 60px;
+  border:#764ba2;
+
+}
+
+.rev-box span {
+  position: absolute;
+  top: 0;
+  
+
+}
+
+
+
+
+
+
+
+.form-title {
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  
+}
+
+.review-form {
+  padding: 0 10px;
+}
+
+.form-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.form-row .half-width {
+  flex: 1;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.big-field {
+  width: 100%;
+}
+
+/* Stili per i campi del form */
+.form-row .half-width .mat-form-field,
+.form-group .mat-form-field {
+  width: 100%;
+}
+
+/* Stile per textarea */
+.textarea-field .mat-form-field-infix {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.submit-button {
+  padding: 8px 30px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  min-width: 150px;
+  height: 40px;
+  background-color: #ffffff;
+  color: rgb(70, 58, 141);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.submit-button:hover:not([disabled]) {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  background-color: #5a67d8;
+  color: #ffffff;
+}
+
+.submit-button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.spinner {
+  margin-right: 6px;
+  display: inline-block;
+}
+
+/* Per i dispositivi mobili - alternativa a @media */
+/* Puoi aggiungere queste classi condizionalmente nel template */
+
+.mobile-view .form_container {
+  margin: 15px;
+  padding: 15px;
+  max-width: 95%;
+}
+
+.mobile-view .form-row {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mobile-view .header-container {
+  padding: 12px;
+  margin-bottom: 20px;
+  max-width: 95%;
+}
+
+.mobile-view .form-title {
+  font-size: 20px;
+}
+
+.mobile-view .review-form {
+  padding: 0;
+}
+
+.mobile-view .submit-button {
+  padding: 7px 20px;
+  min-width: 140px;
+  height: 38px;
+}
+
+
+.big-field {
+  background-color: transparent;
+}
+
