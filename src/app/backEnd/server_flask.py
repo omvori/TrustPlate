@@ -35,7 +35,8 @@ def add_review():
         nuova_recensione = {
             "nome": data.get('nome'),
             "cognome":data.get('cognome',''),
-            "testoRecensione": data.get('testoRecensione')
+            "testoRecensione": data.get('testoRecensione'),
+            "idProdotto": data.get('idProdotto','')
         }
         review_list.append(nuova_recensione)
 

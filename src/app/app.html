@@ -58,23 +58,29 @@
   margin:'0 auto'
 }" class="main_content">
   
-  <div [ngStyle]="{
+<div [ngStyle]="{
     marginBottom:'0.5s'
   }">
-    <app-input-card (newReview)="addReview($event)"></app-input-card>
-  </div>
-  
-  <div [ngStyle]="{
-    display:'flex',
-    flexDirection:'column',
-    gap:'25px'
-  }">
-    <app-recensioni-cards 
-      *ngFor="let review of reviews; let i = index" 
-      [reviewData]="review">
-    </app-recensioni-cards>
-  </div>
+  <app-input-card (newReview)="addReview($event)"></app-input-card>
+    </div>
+
+      <div>
+        <app-cards-to-review [reviews]="reviews"> </app-cards-to-review>
+      </div>
+
+     <!-- <div [ngStyle]="{
+      display:'flex',
+        flexDirection:'column',
+        gap:'25px'
+        }">
+        <app-recensioni-cards 
+          *ngFor="let review of reviews; let i = index" 
+          [reviewData]="review">
+        </app-recensioni-cards>
+      </div>
 </div>
+
+-->
 
  <!-- <footer [ngStyle]="{
     textAlign:'center',

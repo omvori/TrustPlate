@@ -1,7 +1,8 @@
-import { Component, OnInit,signal } from '@angular/core';
+import { Component, OnInit,signal,OnDestroy } from '@angular/core';
 import { ExampleComponent } from './example/example';
 import { FlaskServer } from './services/flask-server';
 import jsonData from './backEnd/reviews.json'
+
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,7 @@ import jsonData from './backEnd/reviews.json'
   standalone: false,
   styleUrl: './app.css'
 })
-export class App implements OnInit{
+export class App implements OnInit,OnDestroy{
   protected readonly title = signal('Progetto Recensioni');
 
   reviews : any [] = jsonData;
@@ -25,10 +26,14 @@ export class App implements OnInit{
   loadReviews(){
     this.flaskService.getReviews().subscribe({
       next: (flaskReviews : any []) =>{
-        this.reviews = flaskReviews;
+        this.reviews = flaskReviews.map(review => ({
+          nome : review.nome || '',
+          cognome: review.cognome || '',
+          testoRecensione: review.testoRecensione || '',
+          idProdotto: review.idProdotto || ''
+        }));
       }
-
-    })
+    });
   }
 
   addReview(review: any){
@@ -37,16 +42,16 @@ export class App implements OnInit{
     this.flaskService.sendReview(review).subscribe({
       next: (newReview: any) => {
         const formattedReview = {
-          name: (newReview.nome || '') + ' '+(newReview.cognome || ''),
-          text: newReview.testoRecensione || ''
+          nome: (newReview.nome || '') + ' '+(newReview.cognome || ''),
+          testoRecensione: newReview.testoRecensione || ''
         };
         this.reviews.push(formattedReview);
-        localStorage.setItem('reviews',JSON.stringify(this.reviews))
+        //localStorage.setItem('reviews',JSON.stringify(this.reviews))
       }
     })
     
 
-    localStorage.setItem('reviews',JSON.stringify(this.reviews))
+    //localStorage.setItem('reviews',JSON.stringify(this.reviews))
   }
 
 
@@ -64,6 +69,10 @@ export class App implements OnInit{
         alert('Cancellate con successo')
       }
     })
+  }
+
+  ngOnDestroy() {
+    localStorage.removeItem('reviews')
   }
 
 }

@@ -1,0 +1,12 @@
+[
+  {
+    "nomeProdotto": "Pane",
+    "idProdotto": "0001",
+    "reviewprod": {
+        "nome":"Andrea",
+        "cognome": "Cersosimo",
+        "testoRecensione":"test1"
+    } 
+  }
+ 
+]

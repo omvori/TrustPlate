@@ -13,13 +13,19 @@ import { FormsModule } from '@angular/forms';
 import { MatSidenavContent, MatSidenavContainer, MatSidenav } from "@angular/material/sidenav";
 import { ServizioProva } from './services/servizio-prova';
 import { MatChip } from "@angular/material/chips";
-
+import { CardsToReview } from './cards-to-review/cards-to-review';
+import {MatMenuModule} from '@angular/material/menu';
+import { MenuTendina } from './menu-tendina/menu-tendina';
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
     App,
     // Example,
-    RecensioniCards
+    RecensioniCards,
+    CardsToReview,
+    MenuTendina
   ],
   imports: [
     BrowserModule,
@@ -33,7 +39,10 @@ import { MatChip } from "@angular/material/chips";
     MatSidenavContainer,
     MatSidenav,
     InputCardComponent,
-    MatChip
+    MatChip,
+    MatMenuModule,
+    MatButtonModule,
+    MatFormFieldModule
 ],
   providers: [ServizioProva, 
     provideBrowserGlobalErrorListeners()

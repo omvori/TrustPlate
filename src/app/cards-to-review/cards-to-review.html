@@ -1,0 +1,138 @@
+<div class="main-container-cards">
+  <div class="container-img-01">
+      <mat-card class="example-card" appearance="outlined">
+      <mat-card-header>
+        <div>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title class="titlecard">Cappelletti con patate fontina e manzo </mat-card-title>
+          <mat-card-subtitle class="id-class">ID : 1</mat-card-subtitle>
+        </div>
+      </mat-card-header>
+      <img mat-card-image src="https://i.pinimg.com/1200x/9c/18/8f/9c188f84e0dd4f2a835162f6641d2989.jpg" alt="Photo of Roasted potato cappelletti">
+      <mat-card-content>
+        <div *ngFor="let review of getIdReview(1)">
+          
+          <h1><p>{{review.nome}} {{review.cognome}} :</p></h1>
+          <p>{{review.testoRecensione}}</p>
+
+
+        </div>
+      </mat-card-content>
+      </mat-card>
+    </div>
+
+  <div class="container-img-02">
+      <mat-card class="example-card" appearance="outlined">
+      <mat-card-header>
+        <div>
+          <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title class="titlecard">Tortellini con uova di salmone</mat-card-title>
+            <mat-card-subtitle class="id-class">ID : 2</mat-card-subtitle>
+          </div>
+      </mat-card-header>
+      <img mat-card-image src="https://i.pinimg.com/1200x/64/4d/eb/644deb90caefae40d6d9dc4eda54448c.jpg" alt="Photo of Tortellini">
+      <mat-card-content>
+        <div *ngFor="let review of getIdReview(2)">
+          
+          <h1><p>{{review.nome}} {{review.cognome}} :</p></h1>
+          <p>{{review.testoRecensione}}</p>
+
+      
+        </div>
+      </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class="container-img-03">
+      <mat-card class="example-card" appearance="outlined">
+      <mat-card-header>
+        <div>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title class="titlecard">Spaghetti con bisque di gamberetti</mat-card-title>
+          <mat-card-subtitle class="id-class">ID : 3</mat-card-subtitle>
+        </div>
+      </mat-card-header>
+      <img mat-card-image src="https://i.pinimg.com/1200x/bf/55/4c/bf554c8d717bd0f0c3d2c557b435a53d.jpg" alt="Photo of chitarra bisque">
+      <mat-card-content>
+        <div *ngFor="let review of getIdReview(3)">
+          
+          <h1><p>{{review.nome}} {{review.cognome}} :</p></h1>
+          <p>{{review.testoRecensione}}</p>
+      
+        </div>
+      </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class="container-img-04">
+      <mat-card class="example-card" appearance="outlined">
+      <mat-card-header>
+        <div>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title class="titlecard">Insalata 3D con feta,melone e cetrioli (minecraft edition) </mat-card-title>
+          <mat-card-subtitle class="id-class">ID : 4</mat-card-subtitle>
+        </div>
+      </mat-card-header>
+      <img mat-card-image src="https://i.pinimg.com/1200x/c4/ab/b8/c4abb8cc350a6e66956cbbbf5d4e7f97.jpg" alt="Photo of chitarra bisque">
+      <mat-card-content>
+        <div *ngFor="let review of getIdReview(4)">
+          
+          <h1><p>{{review.nome}} {{review.cognome}} :</p></h1>
+          <p>{{review.testoRecensione}}</p>
+
+        </div>
+      </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class="container-img-05">
+      <mat-card class="example-card" appearance="outlined">
+      <mat-card-header>
+        <div>
+         
+            <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title class="titlecard">Tonno scottato in crosta di sesamo</mat-card-title>
+          <mat-card-subtitle class="id-class">ID : 5</mat-card-subtitle>
+        </div>
+      </mat-card-header>
+        <div class="image-container05">
+          <img mat-card-image class="image-05"src="https://i.pinimg.com/1200x/49/14/4c/49144c4e10a144b9f49fe3b2f6c3f157.jpg" alt="Photo of chitarra bisque">
+        </div>
+        <mat-card-content>
+        <div *ngFor="let review of getIdReview(5)">
+          
+          <h1><p>{{review.nome}} {{review.cognome}} :</p></h1>
+          <p>{{review.testoRecensione}}</p>
+
+      
+        </div>
+      </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class="container-img-06">
+      <mat-card class="example-card" appearance="outlined">
+      <mat-card-header>
+        <div>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title class="titlecard">Tranche di salmone con pistacchio sciolto</mat-card-title>
+          <mat-card-subtitle class="id-class">ID : 6</mat-card-subtitle>
+
+        </div>
+      </mat-card-header>
+      
+      <img mat-card-image src="https://i.pinimg.com/1200x/bb/5a/c1/bb5ac1e5de90440304a8098f338205cb.jpg" alt="Photo of chitarra bisque">
+      <mat-card-content>
+        <div *ngFor="let review of getIdReview(6)">
+          
+          <h1><p>{{review.nome}} {{review.cognome}} :</p></h1>
+          <p>{{review.testoRecensione}}</p>
+
+      
+        </div>
+      </mat-card-content>
+      </mat-card>
+    </div>
+
+
+  

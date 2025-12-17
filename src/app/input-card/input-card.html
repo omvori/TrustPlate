@@ -46,10 +46,40 @@
           [(ngModel)]="testoRecensione" 
           name="testoRecensione"
           rows="5"
-          placeholder="..."
+          placeholder="La tua recensione ..."
           required></textarea>
       </mat-form-field>
     </div>
+
+
+    <div class="id-container">
+      <form>
+        <h4>Seleziona il prodotto</h4>
+        <mat-form-field>
+          <mat-label>Prodotto</mat-label>
+          <mat-select [(ngModel)]="idProdotto" name="food">
+            @for (food of foodInMemory; track food) {
+              <mat-option [value]="food.value">{{food.viewValue}}</mat-option>
+            }
+          </mat-select>
+        </mat-form-field>
+      </form>
+
+    </div>
+    
+    
+    
+    <!-- <mat-form-field appearance="fill" class="full-width big-field textarea-field">
+      <mat-label>id Prodotto</mat-label>
+      <textarea class="id-box"
+        matInput
+        id="prodotto" 
+        [(ngModel)]="idProdotto" 
+        name="idProdotto"
+        required></textarea>
+    </mat-form-field>
+
+      -->
 
     <div class="button-container">
       <a><button 
@@ -64,7 +94,6 @@
         </span>
         
         <ng-template #loading>
-          <mat-spinner diameter="18" class="spinner"></mat-spinner>
           Invio in corso
         </ng-template>
       </button> </a>

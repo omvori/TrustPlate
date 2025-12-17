@@ -1,4 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { DataChildChild } from '../services/data-child-child';
+import { Subscription } from 'rxjs'; 
 
 @Component({
   selector: 'app-recensioni-cards',
@@ -9,9 +11,19 @@ import { Component, Input } from '@angular/core';
 export class RecensioniCards {
 
   @Input() reviewData?: any
+  //@Output() reviewedCard = new EventEmitter<any>()
 
-  constructor(){
-    
+  //inviaRec(){
+  //  return this.reviewedCard.emit(this.reviewData)
+  // }+
+
+
+  constructor(private dataService: DataChildChild ){
   }
+
+  sendData(){
+    this.dataService.changeData(this.reviewData)
+  }
+
 
 }
