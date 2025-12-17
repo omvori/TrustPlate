@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
+import { MenuData } from '../services/menu-data';
 
 @Component({
   selector: 'app-menu-tendina',
@@ -10,5 +11,8 @@ import {MatButtonModule} from '@angular/material/button';
 })
 export class MenuTendina {
 
-  
+  constructor(private _menudata: MenuData){}
+
+  send_1(){}
+
 }
