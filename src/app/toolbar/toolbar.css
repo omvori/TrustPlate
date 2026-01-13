@@ -1,0 +1,101 @@
+.button-home {
+  color: #3f51b5;
+  background: linear-gradient(135deg, rgba(63, 81, 181, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+
+}
+
+
+.toolbar-space{
+    margin-bottom: 5;
+}
+
+.toolbar-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.title{
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.button-home::before {
+  content: '';
+  position: center;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  transition: left 0.5s ease;
+}
+
+.button-home:hover {
+  background: linear-gradient(135deg, rgba(63, 81, 181, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
+  border-color: #3f51b5;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(63, 81, 181, 0.3);
+}
+
+.button-home:hover::before {
+  left: 100%;
+}
+
+
+mat-toolbar {
+  background: linear-gradient(135deg, #3a4472 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  height:110px;
+}
+
+.button-home {
+  color: white;
+  margin-left: 8px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh
+}
+h1{
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 1px;
+  cursor:grab
+}
+h1 span{
+  transition: .3s linear
+}
+h1:hover span:nth-child(1){
+  margin-right: 5px
+}
+h1:hover span:nth-child(1):after{
+  content: "";
+}
+h1:hover span:nth-child(2){
+  margin-left: 30px
+}
+h1:hover span{
+  color: #fff;
+  text-shadow: 0 0 10px #fff,
+               0 0 20px #fff, 
+               0 0 40px #fff;
+}
+/*made with ❤, by qpi65*/

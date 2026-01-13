@@ -49,4 +49,6 @@ export class PaginaRistoranti implements OnInit{
   getIdReview(idRistorante:string|number):any[]{
     return this.ristoReview.filter(review => review.idRistorante === idRistorante.toString())
   }
+
+  
 }
