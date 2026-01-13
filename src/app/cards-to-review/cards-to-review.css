@@ -21,7 +21,7 @@
 }
 
 mat-card-header {
-  flex-shrink: 0; 
+  display: flex; 
 }
 
 img[mat-card-image] {
@@ -67,18 +67,12 @@ mat-card-content > div > div {
   }
 }
 
-.id-class{
-  text-align: center;
-  font-size: 15px;
-  line-height: 1.2;
-  margin-bottom: 5px;
-
-}
 
 :host {
   display: block;
   height: 200px;
 }
+
 .enter-container {
   border: 1px solid #dddddd;
   margin-top: 1em;
@@ -87,7 +81,7 @@ mat-card-content > div > div {
   font-size: 20px;
 }
 .enter-animation {
-  animation: slide-fade 1s;
+  animation: slide-fade 2s;
 }
 @keyframes slide-fade {
   from {
@@ -99,22 +93,24 @@ mat-card-content > div > div {
     transform: translateY(0);
   }
 }
+
 .titlecard {
+  display: flex;
   text-align: center;
-  font-size: 18px;
+  font-size: 25px;
   line-height: 1.2;
   margin-bottom: 5px;
 }
 
-.example-header-image {
-  background-image: url('https://www.svgrepo.com/show/2624/big-star-button.svg');
-  background-size: cover;
-  background-position: center;
-  margin: auto;
-  margin-bottom: 10px;
-}
+
 
 mat-card-content p {
   margin: 5px 0;
   font-size: 14px;
+}
+
+.submit-button{
+  margin-bottom: 5px;
+  margin-top: 5px;
+  align-items: center;
 }

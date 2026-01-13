@@ -35,20 +35,20 @@ export class InputCardComponent {
   nome = '';
   cognome = '';
   testoRecensione = '';
-  idProdotto = '';
+  idRistorante = '';
   isSubmitting = false;
 
   foodInMemory: Food[] = [
-    {value:'1',viewValue:'Cappelletti con patate fontina e manzo'},
-    {value:'2',viewValue:'Tortellini con uova di salmone'},
-    {value:'3',viewValue:'Spaghetti con bisque di gamberetti'},
-    {value:'4',viewValue:'Insalata 3D con feta,melone e cetrioli (minecraft edition)'},
-    {value:'5',viewValue:'Tonno scottato in crosta di sesamo'},
-    {value:'6',viewValue:'Tranche di salmone con pistacchio sciolto'}
+    {value:'1',viewValue:'Da Gustave'},
+    {value:'2',viewValue:'Lune s Dream'},
+    {value:'3',viewValue:'Maelle s Sorrow'},
+    {value:'4',viewValue:'Sciel and Cariddi'},
+    {value:'5',viewValue:'Verso s Piano'},
+    {value:'6',viewValue:'Esquie s Rocks'}
   ]
   
   inviaRecensione() {
-    if (!this.nome || !this.cognome || !this.testoRecensione || !this.idProdotto) { 
+    if (!this.nome || !this.cognome || !this.testoRecensione || !this.idRistorante) { 
       alert('Per favore compila tutti i campi');
       return;
     }
@@ -59,7 +59,7 @@ export class InputCardComponent {
       nome: this.nome,
       cognome : this.cognome,
       testoRecensione : this.testoRecensione,
-      idProdotto : this.idProdotto
+      idRistorante : this.idRistorante
     };
     
     this.newReview.emit(recensione);
@@ -67,7 +67,7 @@ export class InputCardComponent {
     this.nome = '';
     this.cognome = '';
     this.testoRecensione = '';
-    this.idProdotto = '';
+    this.idRistorante = '';
     this.isSubmitting = false;
     
     alert('Recensione inviata con successo');

@@ -18,6 +18,10 @@ import {MatMenuModule} from '@angular/material/menu';
 import { MenuTendina } from './menu-tendina/menu-tendina';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { PaginaRistoranti } from './pagina-ristoranti/pagina-ristoranti';
+import { HomeComponent } from './home-component/home-component';
+import { RouterModule } from '@angular/router';
+import { LikeDislikeComponent } from './like-dislike-component/like-dislike-component';
 
 @NgModule({
   declarations: [
@@ -25,7 +29,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     // Example,
     RecensioniCards,
     CardsToReview,
-    MenuTendina
+    MenuTendina,
+    PaginaRistoranti,
+    HomeComponent,
+    LikeDislikeComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +49,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatChip,
     MatMenuModule,
     MatButtonModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    RouterModule
 ],
   providers: [ServizioProva, 
     provideBrowserGlobalErrorListeners()

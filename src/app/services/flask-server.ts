@@ -21,4 +21,9 @@ export class FlaskServer {
   clearReviews() {
     return this.http.delete(`${this.baseUrl}/clear`);
   }
+
+  updateGradimento(reviewId: string,incremento:number){
+    return this.http.put<any>(`${this.baseUrl}/reviews/${reviewId}/gradimento`,{incremento:incremento})
+
+  };
 }

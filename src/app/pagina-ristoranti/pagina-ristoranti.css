@@ -1,0 +1,47 @@
+.button-home{
+    margin-top: 10px;
+    border-radius: 50px;
+    margin-bottom: 10px
+}
+
+.likes-div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.nome-cognome{
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-right: 10px;
+    margin-left: 0;
+    margin-top: 10px
+}
+
+.recensioni-cards{
+    width: 500px;
+    height: 280px;
+    background-color: rgb(48, 14, 54);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.recensione-testo{
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}

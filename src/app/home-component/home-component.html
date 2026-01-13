@@ -1,0 +1,107 @@
+<div [ngStyle]="{
+  maxWidth:'1200px',
+  margin:'0 auto',
+  padding:'40px 20px 20px', 
+  backgroundColor:'#f8f9fa', 
+  minHeight:'100vh', 
+  boxSizing:'border-box'
+}" class="container_app">
+<header [ngStyle]="{
+  textAlign: 'center',
+  padding:'40px 30px', 
+  marginBottom:'40px',
+  borderRadius:'15px',
+  color:'white', 
+  boxShadow:'0 px 30px rgba(0,0,0,0.15)', 
+  background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', 
+  transition: 'transform 0.3s ease' 
+}" class="header">
+  
+  <div class="header">
+    <h1 [ngStyle]="{
+      fontSize:'60px',
+      marginBottom:'60px',
+      fontWeight:'700',
+      textShadow:'2px 2px 4px rgba(0,0,0,0.3)',
+    }">TrustPlate</h1>
+    
+    <p [ngStyle]="{
+      fontSize:'1.2rem',
+      opacity:'0.9',
+      maxWidth:'600px',
+      margin:'0 auto 25px'
+    }">Lascia una tua recensione per aiutare altri utenti, o consulta quelle già presenti !</p>
+    
+    <button [ngStyle]="{
+      padding:'12px 25px',
+      backgroundColor:'#ff4757',
+      color:'white',
+      border:'none',
+      borderRadius:'25px',
+      fontSize:'1rem',
+      fontWeight:'600',
+      cursor:'pointer',
+      transition:'all 0.3s ease',
+      boxShadow:'0 4px 15px rgba(255,71,87,0.4)'
+    }" 
+    (click)="removeReviews()">
+      PREMI SOLO SE SAI QUELLO CHE FAI
+    </button>
+  </div>
+</header>
+
+
+<!--routing all'altra pagina dei ristoranti
+
+<button routerLink="/ristoranti">Ristoranti</button>
+-->
+
+
+
+<div [ngStyle]="{
+  display:'grid',
+  gridTemplateColumns:'1fr',
+  gap:'30px',
+  maxWidth:'800px',
+  margin:'0 auto'
+}" class="main_content">
+  
+<div [ngStyle]="{
+    marginBottom:'0.5s'
+  }">
+  <app-input-card (newReview)="addReview($event)"></app-input-card>
+    </div>
+
+
+    <!--vecchie cards dei piatti-->
+      <div>
+        <app-cards-to-review [reviews]="reviews"> </app-cards-to-review>
+      </div>
+
+     <!-- <div [ngStyle]="{
+      display:'flex',
+        flexDirection:'column',
+        gap:'25px'
+        }">
+        <app-recensioni-cards 
+          *ngFor="let review of reviews; let i = index" 
+          [reviewData]="review">
+        </app-recensioni-cards>
+      </div>
+</div>
+
+-->
+
+ <!-- <footer [ngStyle]="{
+    textAlign:'center',
+    padding:'20px',
+    marginTop:'40px',
+    borderTop:'1px solid',
+    color:'Red'
+  }"class="footer">
+    <p class="storage_info">
+      Numero review nel sito: {{reviews.length}}
+    </p>
+
+  </footer> -->
+</div>
