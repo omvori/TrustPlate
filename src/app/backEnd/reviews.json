@@ -1,26 +1,11 @@
 [
   {
-    "id": "607d5caf-94ad-41ff-8a5e-e6c9d8939c08",
-    "nome": "Marcello",
-    "cognome": "Rocco",
-    "testoRecensione": "Ristorante davvero particolare, piatti caldi e design veramente top",
+    "id": "ec78097b-2840-41eb-910b-eb966a462f92",
+    "nome": "Andrea",
+    "cognome": "Cersosimo",
+    "testoRecensione": "prova 1",
     "idRistorante": "1",
-    "gradimento": 28
-  },
-  {
-    "id": "d4f4699a-c08d-46ac-be7b-a4dc6ee23f10",
-    "nome": "Norman",
-    "cognome": "Reedus",
-    "testoRecensione": "Devo ricredermi, avevo letto solo recensioni negative eppure ecco che mi trovo ad un ristorante totalmente restaurato e nuovo ",
-    "idRistorante": "1",
-    "gradimento": 5
-  },
-  {
-    "id": "950a85db-c9fe-486b-809b-11231ee4f533",
-    "nome": "Mirko ",
-    "cognome": "Bisseck",
-    "testoRecensione": "Non \u00e8 come da descrizione, piatti freddi e servizio lento",
-    "idRistorante": "2",
-    "gradimento": 0
+    "gradimento": 14,
+    "contrasto": 13
   }
 ]
