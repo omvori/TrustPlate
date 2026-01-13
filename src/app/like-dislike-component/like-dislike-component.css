@@ -1,0 +1,17 @@
+.heart-like{
+    color: red;
+}
+
+.heart-dislike{
+    color: grey
+ }
+
+.likebutton{
+    margin-right: 20px;
+    max-width: 600px;
+}
+
+.dislikebutton{
+    max-width: 600px;
+
+}

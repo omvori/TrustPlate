@@ -17,10 +17,10 @@ export class CardsToReview implements OnInit {
   @Input() reviewedCard?: any
   @Input() reviews: any[] = [];
 
-  isShown = signal(false);
+  isShown = signal(true);
 
   ngOnInit() {
-    this.toggle()
+    //this.toggle()
   }
 
 
@@ -29,7 +29,7 @@ export class CardsToReview implements OnInit {
   }
 
 
-  getIdReview(idProdotto: string|number): any[]{
-    return this.reviews.filter(review => review.idProdotto === idProdotto.toString());
+  getIdReview(idRistorante: string|number): any[]{
+    return this.reviews.filter(review => review.idRistorante === idRistorante.toString());
   }
 }

@@ -1,26 +1,26 @@
 [
   {
-    "nome": "Gianluca ",
-    "cognome": "Rossi",
-    "testoRecensione": "Un piatto presentato molto bene, delizioso e ricco di sapori. Unica nota negativa sono gli schizzi di pistacchio che rovinano un p\u00f2 il concetto in s\u00e8 artistico. ",
-    "idProdotto": "6"
+    "id": "607d5caf-94ad-41ff-8a5e-e6c9d8939c08",
+    "nome": "Marcello",
+    "cognome": "Rocco",
+    "testoRecensione": "Ristorante davvero particolare, piatti caldi e design veramente top",
+    "idRistorante": "1",
+    "gradimento": 28
   },
   {
-    "nome": "Luca",
-    "cognome": "Marelli",
-    "testoRecensione": "Grandissimo piatto, invitante e ottima presentazione",
-    "idProdotto": "5"
+    "id": "d4f4699a-c08d-46ac-be7b-a4dc6ee23f10",
+    "nome": "Norman",
+    "cognome": "Reedus",
+    "testoRecensione": "Devo ricredermi, avevo letto solo recensioni negative eppure ecco che mi trovo ad un ristorante totalmente restaurato e nuovo ",
+    "idRistorante": "1",
+    "gradimento": 5
   },
   {
-    "nome": "Paolo",
-    "cognome": "Alimanno",
-    "testoRecensione": "Ci sono stato ieri con mia moglie, mi ha tradito poco dopo",
-    "idProdotto": "4"
-  },
-  {
-    "nome": "Alessia",
-    "cognome": "Gerardini",
-    "testoRecensione": "Davvero buono !",
-    "idProdotto": "1"
+    "id": "950a85db-c9fe-486b-809b-11231ee4f533",
+    "nome": "Mirko ",
+    "cognome": "Bisseck",
+    "testoRecensione": "Non \u00e8 come da descrizione, piatti freddi e servizio lento",
+    "idRistorante": "2",
+    "gradimento": 0
   }
 ]

@@ -2,6 +2,7 @@ from flask_cors import CORS
 import json
 import os 
 from flask import Flask, jsonify, request
+import uuid
 
 
 app = Flask(__name__)
@@ -21,7 +22,8 @@ def get_reviews():
         return jsonify([
             {"nome":"Mario",
              "cognome":"Rossi",
-             "testoRecensione":"servizio eccellente molto soddisfatto"}
+             "testoRecensione":"servizio eccellente molto soddisfatto",
+             "idRistorante": "2"}
         ])
     return jsonify(review_list)
 
@@ -33,10 +35,12 @@ def add_review():
         data = request.json
 
         nuova_recensione = {
+            "id":str(uuid.uuid4()),
             "nome": data.get('nome'),
             "cognome":data.get('cognome',''),
             "testoRecensione": data.get('testoRecensione'),
-            "idProdotto": data.get('idProdotto','')
+            "idRistorante": data.get('idRistorante',''),
+            "gradimento": 0
         }
         review_list.append(nuova_recensione)
 
@@ -71,15 +75,39 @@ def load_reviews():
             review_list = [
                 {"nome": "Mario",
                  "cognome":"Rossi",
-                 "testoRecensione":"Molto buona,soddisfatto"}
+                 "testoRecensione":"Molto buona,soddisfatto",
+                 "idRistorante":"1"}
             ]
             with open('reviews.json','w') as file:
                 json.dump(review_list,file,indent=2)
     except:
         review_list = []
 
+@app.route('/api/reviews/<review_id>/gradimento',methods=['PUT'])
+def update_gradimento(review_id):
+    try:
+        data = request.json
+        incremento = data.get('incremento',0)
+
+        for recensione in review_list:
+            if recensione['id'] == review_id:
+                recensione['gradimento'] = recensione.get('gradimento') + incremento
+
+                with open('reviews.json','w') as file:
+                    json.dump(review_list,file,indent=2)
+
+                return jsonify({
+                    "success":True,
+                    "nuovo_gradimento":recensione['gradimento']
+                }), 200
+        return jsonify({"error":"recensione non trovata"}),404
+    
+    except Exception as e:
+        return jsonify({"error":str(e)}),500
+
+
 
 if __name__ == '__main__':
     load_reviews()
     print("Server flask in esecuzione")
-    app.run()
+    app.run(debug=True)
