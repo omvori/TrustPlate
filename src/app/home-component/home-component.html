@@ -1,52 +1,15 @@
-<div [ngStyle]="{
-  maxWidth:'1200px',
-  margin:'0 auto',
-  padding:'40px 20px 20px', 
-  backgroundColor:'#f8f9fa', 
-  minHeight:'100vh', 
-  boxSizing:'border-box'
-}" class="container_app">
-<header [ngStyle]="{
-  textAlign: 'center',
-  padding:'40px 30px', 
-  marginBottom:'40px',
-  borderRadius:'15px',
-  color:'white', 
-  boxShadow:'0 px 30px rgba(0,0,0,0.15)', 
-  background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', 
-  transition: 'transform 0.3s ease' 
-}" class="header">
+<div class="container_app">
+  <header class="header">
   
-  <div class="header">
-    <h1 [ngStyle]="{
-      fontSize:'60px',
-      marginBottom:'60px',
-      fontWeight:'700',
-      textShadow:'2px 2px 4px rgba(0,0,0,0.3)',
-    }">TrustPlate</h1>
-    
-    <p [ngStyle]="{
-      fontSize:'1.2rem',
-      opacity:'0.9',
-      maxWidth:'600px',
-      margin:'0 auto 25px'
-    }">Lascia una tua recensione per aiutare altri utenti, o consulta quelle già presenti !</p>
-    
-    <button [ngStyle]="{
-      padding:'12px 25px',
-      backgroundColor:'#ff4757',
-      color:'white',
-      border:'none',
-      borderRadius:'25px',
-      fontSize:'1rem',
-      fontWeight:'600',
-      cursor:'pointer',
-      transition:'all 0.3s ease',
-      boxShadow:'0 4px 15px rgba(255,71,87,0.4)'
-    }" 
-    (click)="removeReviews()">
-      PREMI SOLO SE SAI QUELLO CHE FAI
-    </button>
+    <div class="header-title-box">
+      <h1 class="title"><span>Trust</span><span>Plate</span></h1>
+      
+      <p class="text-under-title">Lascia una tua recensione per aiutare altri utenti, o consulta quelle già presenti !</p>
+      
+      <button class="rm-reviews-button" 
+      (click)="removeReviews()" >
+        Reset sito
+      </button>
   </div>
 </header>
 
@@ -58,23 +21,13 @@
 
 
 
-<div [ngStyle]="{
-  display:'grid',
-  gridTemplateColumns:'1fr',
-  gap:'30px',
-  maxWidth:'800px',
-  margin:'0 auto'
-}" class="main_content">
-  
-<div [ngStyle]="{
-    marginBottom:'0.5s'
-  }">
+<div  class="main_content">
+  <!--input form-->
   <app-input-card (newReview)="addReview($event)"></app-input-card>
     </div>
-
-
-    <!--vecchie cards dei piatti-->
+        
       <div>
+        <!--cards ristoranti-->
         <app-cards-to-review [reviews]="reviews"> </app-cards-to-review>
       </div>
 
