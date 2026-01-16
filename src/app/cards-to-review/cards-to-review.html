@@ -1,184 +1,171 @@
-<div class="main-container-cards"  animate.enter="enter-animation">
-  <div class="container-img-01">
-      <mat-card class="example-card" appearance="outlined">
-      <mat-card-header class="header-card">
-        <div >
-          <div mat-card-avatar class="example-header-image"></div>
-              <mat-card-title class="titlecard">Da Gustave</mat-card-title>
-              <mat-card-subtitle class="id-class">ID : 1</mat-card-subtitle>
-            
-              
-              <button mat-raised-button 
-          color="primary"
-        type="submit"
-        class="submit-button" [routerLink]="['/ristoranti',1]">Link</button>
+<div class="main-container-cards" animate.enter="enter-animation">
+
+  <div [routerLink]="['/ristoranti',1]" class="container-card-01 flip-card">
+    <mat-card class="whole-card card-inner" appearance="outlined">
+      <div class="card-front">
+        <mat-card-header class="header-class">
+          <div mat-card-avatar class="header">header</div>
+        </mat-card-header>
+        <div class="image-container">
+          <img class="imgs" mat-card-image src="https://i.pinimg.com/1200x/5a/4f/e3/5a4fe3e3957cda6443685d320460c125.jpg" alt="Photo">
         </div>
-      </mat-card-header>
-      <img mat-card-image src="https://i.pinimg.com/1200x/5a/4f/e3/5a4fe3e3957cda6443685d320460c125.jpg" alt="Photo of Roasted potato cappelletti">
-      <mat-card-content>
-
-        <!-- recensioni che appaiono dentro le cards (vecchia versione)
-        
-        <div *ngFor="let review of getIdReview(1)">
-          
-          <h1><p>{{review.nome}} {{review.cognome}} :</p></h1>
-          <p>{{review.testoRecensione}}</p>
-
-
-        </div>
-
-        -->
-      </mat-card-content>
-      </mat-card>
-    </div>
-
-  <div class="container-img-02">
-      <mat-card class="example-card" appearance="outlined">
-      <mat-card-header>
-        <div>
-          <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title class="titlecard">Lune's Dream</mat-card-title>
-            <mat-card-subtitle class="id-class">ID : 2</mat-card-subtitle>
-            <button mat-raised-button 
-          color="primary"
-        type="submit"
-        class="submit-button"
-        [routerLink]="['/ristoranti',2]">Link</button>
-
-          </div>
-      </mat-card-header>
-      <img mat-card-image src="https://i.pinimg.com/1200x/db/d4/e8/dbd4e8a86e29bb531166bea6be449c7c.jpg" alt="Photo of Tortellini">
-      <mat-card-content>
-
-        <!--
-        <div *ngFor="let review of getIdReview(2)">
-          
-          <h1><p>{{review.nome}} {{review.cognome}} :</p></h1>
-          <p>{{review.testoRecensione}}</p>
-
-      
-        </div>
-        -->
-      </mat-card-content>
-      </mat-card>
-    </div>
-
-    <div class="container-img-03">
-      <mat-card class="example-card" appearance="outlined">
-      <mat-card-header>
-        <div>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title class="titlecard">Maelle's Sorrow</mat-card-title>
-          <mat-card-subtitle class="id-class">ID : 3</mat-card-subtitle>
-          <button mat-raised-button 
-          color="primary"
-        type="submit"
-        class="submit-button" [routerLink]="['/ristoranti',3]">Link</button>
-        </div>
-      </mat-card-header>
-      <img mat-card-image src="https://i.pinimg.com/736x/ad/9b/3c/ad9b3cfbc48a2fa800f741e9db2147e9.jpg" alt="Photo of chitarra bisque">
-      <mat-card-content>
-
-        <!--
-        <div *ngFor="let review of getIdReview(3)">
-          
-          <h1><p>{{review.nome}} {{review.cognome}} :</p></h1>
-          <p>{{review.testoRecensione}}</p>
-      
-        </div>
-        -->
-      </mat-card-content>
-      </mat-card>
-    </div>
-
-    <div class="container-img-04">
-      <mat-card class="example-card" appearance="outlined">
-      <mat-card-header>
-        <div>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title class="titlecard">Sciel and Cariddi</mat-card-title>
-          <mat-card-subtitle class="id-class">ID : 4</mat-card-subtitle>
-          <button mat-raised-button 
-          color="primary"
-        type="submit"
-        class="submit-button" [routerLink]="['/ristoranti',4]">Link</button>
-        </div>
-      </mat-card-header>
-      <img mat-card-image src="https://i.pinimg.com/1200x/36/39/e3/3639e3267f2f9df17325383896a99daa.jpg" alt="Photo of chitarra bisque">
-      <mat-card-content>
-
-        <!--
-        <div *ngFor="let review of getIdReview(4)">
-          
-          <h1><p>{{review.nome}} {{review.cognome}} :</p></h1>
-          <p>{{review.testoRecensione}}</p>
-
-        </div>
-        -->
-      </mat-card-content>
-      </mat-card>
-    </div>
-
-    <div class="container-img-05">
-      <mat-card class="example-card" appearance="outlined">
-      <mat-card-header>
-        <div>
-         
-            <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title class="titlecard">Verso's Piano</mat-card-title>
-          <mat-card-subtitle class="id-class">ID : 5</mat-card-subtitle>
-          <button mat-raised-button 
-          color="primary"
-        type="submit"
-        class="submit-button" [routerLink]="['/ristoranti',5]">Link</button>
-        </div>
-      </mat-card-header>
-        <div class="image-container05">
-          <img mat-card-image class="image-05"src="https://i.pinimg.com/736x/48/b0/ec/48b0ec4dd0044e77ea3c9b5584dd1c89.jpg" alt="Photo of chitarra bisque">
+        <div class="campi-testo">
+          <mat-card-title class="titlecard">Da Gustave</mat-card-title>
+          <mat-card-subtitle class="link-text">Dagustave.com</mat-card-subtitle>
         </div>
         <mat-card-content>
-        <!--
-        <div *ngFor="let review of getIdReview(5)">
-          
-          <h1><p>{{review.nome}} {{review.cognome}} :</p></h1>
-          <p>{{review.testoRecensione}}</p>
+          <div class="review-counter">
+            <span>{{getIdReview(1).length}} recensioni presenti</span>
+          </div>
+        </mat-card-content>
+      </div>
+      <div class="card-back">
+        <div class="back-content">
+          <p class="site-link-back">Dagustave.com</p></div>
+        <p class="back-content">{{getIdReview(1).length}} recensioni presenti</p>
+      </div>
+    </mat-card>
+  </div>
 
-      
+  <div [routerLink]="['/ristoranti',2]" class="container-card-02 flip-card">
+    <mat-card class="whole-card card-inner" appearance="outlined">
+      <div class="card-front">
+        <mat-card-header class="header-class">
+          <div mat-card-avatar class="header">header</div>
+        </mat-card-header>
+        <div class="image-container">
+          <img class="imgs" mat-card-image src="https://i.pinimg.com/1200x/db/d4/e8/dbd4e8a86e29bb531166bea6be449c7c.jpg" alt="Photo">
         </div>
-        -->
-      </mat-card-content>
-      </mat-card>
-    </div>
+        <div class="campi-testo">
+          <mat-card-title class="titlecard">Lune's Dream</mat-card-title>
+          <mat-card-subtitle class="link-text">www.lunes.com</mat-card-subtitle>
+        </div>
+        <mat-card-content>
+          <div class="review-counter">
+            <span>{{getIdReview(2).length}} recensioni presenti</span>
+          </div>
+        </mat-card-content>
+      </div>
+      <div class="card-back">
+        <div class="back-content">
+          <p class="site-link-back">www.lunes.com</p></div>
+        <p class="back-content">{{getIdReview(2).length}} recensioni presenti</p>
 
-    <div class="container-img-06">
-      <mat-card class="example-card" appearance="outlined">
-      <mat-card-header>
-        <div>
-          <div mat-card-avatar class="example-header-image"></div>
+        
+      </div>
+    </mat-card>
+  </div>
+
+  <div [routerLink]="['/ristoranti',3]" class="container-card-03 flip-card">
+    <mat-card class="whole-card card-inner" appearance="outlined">
+      <div class="card-front">
+        <mat-card-header class="header-class">
+          <div mat-card-avatar class="header">header</div>
+        </mat-card-header>
+        <div class="image-container">
+          <img class="imgs" mat-card-image src="https://i.pinimg.com/736x/ad/9b/3c/ad9b3cfbc48a2fa800f741e9db2147e9.jpg" alt="Photo">
+        </div>
+        <div class="campi-testo">
+          <mat-card-title class="titlecard">Maelle's Sorrow</mat-card-title>
+          <mat-card-subtitle class="link-text">forthosewhocomeafter.com</mat-card-subtitle>
+        </div>
+        <mat-card-content>
+          <div class="review-counter">
+            <span>{{getIdReview(3).length}} recensioni presenti</span>
+          </div>
+        </mat-card-content>
+      </div>
+      <div class="card-back">
+        <div class="back-content">
+          <p class="site-link-back">forthosewhocomeafter.com</p></div>
+        <p class="back-content">{{getIdReview(3).length}} recensioni presenti</p>
+
+      </div>
+    </mat-card>
+  </div>
+
+  <div [routerLink]="['/ristoranti',4]" class="container-card-04 flip-card">
+    <mat-card class="whole-card card-inner" appearance="outlined">
+      <div class="card-front">
+        <mat-card-header class="header-class">
+          <div mat-card-avatar class="header">header</div>
+        </mat-card-header>
+        <div class="image-container">
+          <img class="imgs" mat-card-image src="https://i.pinimg.com/1200x/36/39/e3/3639e3267f2f9df17325383896a99daa.jpg" alt="Photo">
+        </div>
+        <div class="campi-testo">
+          <mat-card-title class="titlecard">Sciel and Cariddi</mat-card-title>
+          <mat-card-subtitle class="link-text">tarots.it</mat-card-subtitle>
+        </div>
+        <mat-card-content>
+          <div class="review-counter">
+            <span>{{getIdReview(4).length}} recensioni presenti</span>
+          </div>
+        </mat-card-content>
+      </div>
+      <div class="card-back">
+        <div class="back-content">
+          <p class="site-link-back">tarots.it</p></div>
+        <p class="back-content">{{getIdReview(4).length}} recensioni presenti</p>
+
+      </div>
+    </mat-card>
+  </div>
+
+  <div [routerLink]="['/ristoranti',5]" class="container-card-05 flip-card">
+    <mat-card class="whole-card card-inner" appearance="outlined">
+      <div class="card-front">
+        <mat-card-header class="header-class">
+          <div mat-card-avatar class="header">header</div>
+        </mat-card-header>
+        <div class="image-container">
+          <img class="imgs" mat-card-image src="https://i.pinimg.com/736x/48/b0/ec/48b0ec4dd0044e77ea3c9b5584dd1c89.jpg" alt="Photo">
+        </div>
+        <div class="campi-testo">
+          <mat-card-title class="titlecard">Verso's Piano</mat-card-title>
+          <mat-card-subtitle class="link-text">versospiano.com</mat-card-subtitle>
+        </div>
+        <mat-card-content>
+          <div class="review-counter">
+            <span>{{getIdReview(5).length}} recensioni presenti</span>
+          </div>
+        </mat-card-content>
+      </div>
+      <div class="card-back">
+        <div class="back-content">
+          <p class="site-link-back">versospiano.com</p></div>
+        <p class="back-content">{{getIdReview(5).length}} recensioni presenti</p>
+
+      </div>
+    </mat-card>
+  </div>
+
+  <div [routerLink]="['/ristoranti',6]" class="container-card-06 flip-card">
+    <mat-card class="whole-card card-inner" appearance="outlined">
+      <div class="card-front">
+        <mat-card-header class="header-class">
+          <div mat-card-avatar class="header">header</div>
+        </mat-card-header>
+        <div class="image-container">
+          <img class="imgs" mat-card-image src="https://i.pinimg.com/736x/7e/63/1e/7e631e2009fce7d487161f6e069b0444.jpg" alt="Photo">
+        </div>
+        <div class="campi-testo">
           <mat-card-title class="titlecard">Esquie's Rocks</mat-card-title>
-          <mat-card-subtitle class="id-class">ID : 6</mat-card-subtitle>
-          <button mat-raised-button 
-          color="primary"
-        type="submit"
-        class="submit-button" [routerLink]="['/ristoranti',6]">Link</button>
-
+          <mat-card-subtitle class="link-text">wooho.com</mat-card-subtitle>
         </div>
-      </mat-card-header>
-      
-      <img mat-card-image src="https://i.pinimg.com/736x/7e/63/1e/7e631e2009fce7d487161f6e069b0444.jpg" alt="Photo of chitarra bisque">
-      <mat-card-content>
+        <mat-card-content>
+          <div class="review-counter">
+            <span>{{getIdReview(6).length}} recensioni presenti</span>
+          </div>
+        </mat-card-content>
+      </div>
+      <div class="card-back">
+        <div class="back-content">
+          <p class="site-link-back">wooho.com</p></div>
+        <p class="back-content">{{getIdReview(6).length}} recensioni presenti</p>
 
-        <!--
-        <div *ngFor="let review of getIdReview(6)">
-          
-          <h1><p>{{review.nome}} {{review.cognome}} :</p></h1>
-          <p>{{review.testoRecensione}}</p>
-      
-        </div>
-        -->
-      </mat-card-content>
-      </mat-card>
+      </div>
+    </mat-card>
+  </div>
+
 </div>
-
-
-  

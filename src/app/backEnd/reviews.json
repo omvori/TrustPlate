@@ -1,26 +1,29 @@
 [
   {
-    "id": "607d5caf-94ad-41ff-8a5e-e6c9d8939c08",
+    "id": "0c40901f-6c45-4c77-8976-2e7fe06abe20",
     "nome": "Marcello",
-    "cognome": "Rocco",
-    "testoRecensione": "Ristorante davvero particolare, piatti caldi e design veramente top",
+    "cognome": "Crocca",
+    "testoRecensione": "Vengo spesso a Milano,e da sempre incuriosita da questo locale che ho deciso di visitare il 30 dicembre in pieno clima festivo con la galleria tutta illuminata, ma ne sono rimasta delusa.\nAbbiamo preso una cioccolata con panna che mi \u00e8 stata portata separata in una ciotola brutta anche da vedere , panna di bassa qualit\u00e0, quasi liquida senza sapore, anzi non classificabile davvero, e un marocchino deludente, per non parlare dei macarons secchi veramente immangiabili.\nPoi ci siamo recate ai servizi e siamo rimaste sconvolte: bagno sporchissimo completamente pieno di liquidi sia a terra che sul piano del lavandino; non \u00e8 accettabile che un posto del genere in galleria dia un servizio cos\u00ec , veramente ai limiti delle minime regole sanitarie.\nIl servizio scadente: non avevo ancora finito la consumazione , che gi\u00e0 stavano togliendo la mia tazza.\nEsperienza da non ripetere mai piu'!\nPeccato, xch\u00e8 il servizio e la qualit\u00e0 dovrebbero essere all'altezza del posto ,che merita veramente la cura di ogni piccolo dettaglio, che invece manca completamente.PECCATO!!!!",
     "idRistorante": "1",
-    "gradimento": 28
+    "gradimento": 11,
+    "contrasto": 14
   },
   {
-    "id": "d4f4699a-c08d-46ac-be7b-a4dc6ee23f10",
-    "nome": "Norman",
-    "cognome": "Reedus",
-    "testoRecensione": "Devo ricredermi, avevo letto solo recensioni negative eppure ecco che mi trovo ad un ristorante totalmente restaurato e nuovo ",
+    "id": "31169665-2022-455d-9acc-477c4d502896",
+    "nome": "Loredana ",
+    "cognome": "Fratellini",
+    "testoRecensione": "Attivit\u00e0 molto bene organizzata e coinvolgente, particolarmente apprezzata la cura dei dettagli . Consigliata.",
     "idRistorante": "1",
-    "gradimento": 5
+    "gradimento": 5,
+    "contrasto": 4
   },
   {
-    "id": "950a85db-c9fe-486b-809b-11231ee4f533",
-    "nome": "Mirko ",
-    "cognome": "Bisseck",
-    "testoRecensione": "Non \u00e8 come da descrizione, piatti freddi e servizio lento",
-    "idRistorante": "2",
-    "gradimento": 0
+    "id": "b23880e7-3531-4003-87e6-3bb0981a934f",
+    "nome": "Marisa",
+    "cognome": "Belli",
+    "testoRecensione": "Che dire, un nome una garanzia",
+    "idRistorante": "3",
+    "gradimento": 0,
+    "contrasto": 0
   }
 ]

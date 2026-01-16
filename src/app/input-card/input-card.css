@@ -1,10 +1,10 @@
 .form_container {
-  max-width: 800px;
+  max-width: 810px;
   margin: 30px auto;
   padding: 20px;
   background: #516eff;
   border-radius: 10px;
-  background: linear-gradient(135deg, #545869 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #413564 0%, #342a3d 100%);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 

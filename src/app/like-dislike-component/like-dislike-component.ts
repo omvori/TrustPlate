@@ -46,16 +46,16 @@ export class LikeDislikeComponent implements OnInit,OnChanges {
 
   dislikeButtonClick(){
     if(this.reviewId){
-      this.flaskService.updateGradimento(this.reviewId,-1).subscribe({
+      this.flaskService.updateContrasto(this.reviewId,-1).subscribe({
         next: (response)=>{
-          this.numberOfLikes = response.nuovo_gradimento;
+          this.numberOfDislikes = response.nuovo_contrasto;
         }, error: (errore)=>{
           console.error("Errore nel dislike",errore);
-          this.numberOfLikes--;
+          this.numberOfDislikes--;
         }
       });
     }else{
-      this.numberOfLikes--;
+      this.numberOfDislikes--;
     }
   }
 

@@ -1,186 +1,203 @@
-<div style="padding:20px; text-align:center;">
-    
-    @switch (ristoranteId) {
-        @case ("1") {
-          
-            <h1>Da Gustave</h1>
-            <p>Ristorante italiano tradizionale con specialità di pasta fresca e atmosfera familiare. Da Gustave è famoso per le sue porzioni abbondanti e il servizio cordiale.</p>
-        }
-        @case ("2") {
-            <h1>Lune's Dream</h1>
-            <p>Locale moderno fusion che combina cucina asiatica e mediterranea. Lune's Dream offre un'esperienza culinaria unica con piatti creativi e presentazione artistica.</p>
-        }
-        @case ("3") {
-            <h1>Maelle'Sorrow</h1>
-            <p>Trattoria rustica specializzata in carni alla griglia e piatti della tradizione contadina. Maelle's Sorrow ha un'atmosfera calda e autentica con prodotti a km zero.</p>
-        }
-        @case ("4") {
-            <h1>Sciel And Cariddi</h1>
-            <p>Ristorante di pesce con vista mare, famoso per il crudo di qualità e le zuppe di mare. Sciel and Cariddi utilizza solo pescato del giorno.</p>
-        }
-        @case ("5") {
-            <h1>Verso's Piano</h1>
-            <p>Elegante ristorante con cucina raffinata e sala da concerto. Verso's Piano combina alta cucina con performance musicali dal vivo.</p>
-        }
-        @case ("6") {
-            <h1>Esquie's Rocks</h1>
-            <p>Pub-gastronomico con birre artigianali e piatti robusti. Esquie's Rocks è il luogo ideale per serate informali con amici e musica rock.</p>
-        }
-        @default {
-            <h1>Ristorante</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas provident nisi rerum aliquam ea explicabo quisquam similique soluta culpa sapiente, cupiditate quae veniam accusantium placeat vel veritatis sed mollitia deserunt!</p>
-        }
-    }
-    
-    <p>ID ristorante : {{ristoranteId}}<p>
-    
-    <button class="button-home" routerLink="/">Torna alla Home</button>
-    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px;">
-    @switch (ristoranteId) {
-        @case ("1"){
-        
-        <div *ngFor="let review of getIdReview(1)">
-            <div class="recensioni-cards">
-              <mat-card style="height:100%;">
-                <mat-card-header>
-                  <mat-card-title-group>
-                    <mat-card-title class="nome-cognome">{{(review.nome || '') + ' ' + (review.cognome || '') || 'Nome utente'}}</mat-card-title>
-                  </mat-card-title-group>
-                </mat-card-header>
+<div class="page-wrapper">
+  <app-toolbar></app-toolbar>
 
-                <mat-card-content class="recensione-testo">
-                  {{review.testoRecensione || 'Testo recensione'}}
-                  <div class="likes-div" style="justify-content:center; margin-top:10px;">
-                      <app-like-dislike-component
-                        [reviewId]="review.id"
-                        [initialLikes]="review.gradimento">
-                      </app-like-dislike-component>
-                   </div>
-                </mat-card-content>
-              </mat-card>
-            </div>
-        </div>
+
+  <div class="main-content">
+    <div style="padding:20px; text-align:center;">
+        
+        @switch (ristoranteId) {
+            @case ("1") {
+              
+                <h1>Da Gustave</h1>
+                <p>Ristorante italiano tradizionale con specialità di pasta fresca e atmosfera familiare. Da Gustave è famoso per le sue porzioni abbondanti e il servizio cordiale.</p>
+            }
+            @case ("2") {
+                <h1>Lune's Dream</h1>
+                <p>Locale moderno fusion che combina cucina asiatica e mediterranea. Lune's Dream offre un'esperienza culinaria unica con piatti creativi e presentazione artistica.</p>
+            }
+            @case ("3") {
+                <h1>Maelle'Sorrow</h1>
+                <p>Trattoria rustica specializzata in carni alla griglia e piatti della tradizione contadina. Maelle's Sorrow ha un'atmosfera calda e autentica con prodotti a km zero.</p>
+            }
+            @case ("4") {
+                <h1>Sciel And Cariddi</h1>
+                <p>Ristorante di pesce con vista mare, famoso per il crudo di qualità e le zuppe di mare. Sciel and Cariddi utilizza solo pescato del giorno.</p>
+            }
+            @case ("5") {
+                <h1>Verso's Piano</h1>
+                <p>Elegante ristorante con cucina raffinata e sala da concerto. Verso's Piano combina alta cucina con performance musicali dal vivo.</p>
+            }
+            @case ("6") {
+                <h1>Esquie's Rocks</h1>
+                <p>Pub-gastronomico con birre artigianali e piatti robusti. Esquie's Rocks è il luogo ideale per serate informali con amici e musica rock.</p>
+            }
+            @default {
+                <h1>Ristorante</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas provident nisi rerum aliquam ea explicabo quisquam similique soluta culpa sapiente, cupiditate quae veniam accusantium placeat vel veritatis sed mollitia deserunt!</p>
+            }
         }
         
-        @case ("2"){
-        <div *ngFor="let review of getIdReview(2)">
-            <div class="recensioni-cards">
-              <mat-card style="height:100%;">
-                <mat-card-header>
-                  <mat-card-title-group>
-                    <mat-card-title class="nome-cognome">{{(review.nome || '') + ' ' + (review.cognome || '') || 'Nome utente'}}</mat-card-title>
-                  </mat-card-title-group>
-                </mat-card-header>
-
-                <mat-card-content class="recensione-testo">
-                  {{review.testoRecensione || 'Testo recensione'}}
-                  <div class="likes-div" style="justify-content:center; margin-top:10px;">
-                      <app-like-dislike-component
-                        [reviewId]="review.id"
-                        [initialLikes]="review.gradimento">
-                      </app-like-dislike-component>
-                   </div>
-                </mat-card-content>
-              </mat-card>
-            </div>
-        </div>
-        }
-
-        @case ("3"){
-        <div *ngFor="let review of getIdReview(3)">
-            <div class="recensioni-cards">
-              <mat-card style="height:100%;">
-                <mat-card-header>
-                  <mat-card-title-group>
-                    <mat-card-title class="nome-cognome">{{(review.nome || '') + ' ' + (review.cognome || '') || 'Nome utente'}}</mat-card-title>
-                  </mat-card-title-group>
-                </mat-card-header>
-
-                <mat-card-content class="recensione-testo">
-                  {{review.testoRecensione || 'Testo recensione'}}
-                  <div class="likes-div" style="justify-content:center; margin-top:10px;">
-                      <app-like-dislike-component
-                        [reviewId]="review.id"
-                        [initialLikes]="review.gradimento">
-                      </app-like-dislike-component>
-                   </div>
-                </mat-card-content>
-              </mat-card>
-            </div>
-        </div>
-        }
+        <p>ID ristorante : {{ristoranteId}}<p>
         
-        @case ("4"){
-        <div *ngFor="let review of getIdReview(4)">
-            <div class="recensioni-cards">
-              <mat-card style="height:100%;">
-                <mat-card-header>
-                  <mat-card-title-group>
-                    <mat-card-title class="nome-cognome">{{(review.nome || '') + ' ' + (review.cognome || '') || 'Nome utente'}}</mat-card-title>
-                  </mat-card-title-group>
-                </mat-card-header>
+        
+        <div animate.enter="enter-animation" style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px;">
+        @switch (ristoranteId) {
+            @case ("1"){
+            
+            <div *ngFor="let review of getIdReview(1)">
+                <div class="recensioni-cards">
+                  <mat-card style="height:100%;">
+                    <mat-card-header>
+                      <mat-card-title-group>
+                        <mat-card-title class="nome-cognome">{{(review.nome || '') + ' ' + (review.cognome || '') || 'Nome utente'}}</mat-card-title>
+                      </mat-card-title-group>
+                    </mat-card-header>
 
-                <mat-card-content class="recensione-testo">
-                  {{review.testoRecensione || 'Testo recensione'}}
-                  <div class="likes-div" style="justify-content:center; margin-top:10px;">
-                      <app-like-dislike-component
-                        [reviewId]="review.id"
-                        [initialLikes]="review.gradimento">
-                      </app-like-dislike-component>
-                   </div>
-                </mat-card-content>
-              </mat-card>
+                    <mat-card-content class="recensione-testo">
+                      {{review.testoRecensione || 'Testo recensione'}}
+                      <div class="likes-div" style="justify-content:center; margin-top:10px;">
+                      </div>
+                    </mat-card-content>
+                    <app-like-dislike-component
+                      [reviewId]="review.id"
+                      [initialLikes]="review.gradimento"
+                      [initialDislikes]="review.contrasto">
+                    </app-like-dislike-component>
+                  </mat-card>
+                </div>
             </div>
-        </div>
-        }
+            }
+            
+            @case ("2"){
+            <div *ngFor="let review of getIdReview(2)">
+                <div class="recensioni-cards">
+                  <mat-card style="height:100%;">
+                    <mat-card-header>
+                      <mat-card-title-group>
+                        <mat-card-title class="nome-cognome">{{(review.nome || '') + ' ' + (review.cognome || '') || 'Nome utente'}}</mat-card-title>
+                      </mat-card-title-group>
+                    </mat-card-header>
 
-        @case ("5"){
-        <div *ngFor="let review of getIdReview(5)">
-            <div class="recensioni-cards">
-              <mat-card style="height:100%;">
-                <mat-card-header>
-                  <mat-card-title-group>
-                    <mat-card-title class="nome-cognome">{{(review.nome || '') + ' ' + (review.cognome || '') || 'Nome utente'}}</mat-card-title>
-                  </mat-card-title-group>
-                </mat-card-header>
-
-                <mat-card-content class="recensione-testo">
-                  {{review.testoRecensione || 'Testo recensione'}}
-                  <div class="likes-div" style="justify-content:center; margin-top:10px;">
-                      <app-like-dislike-component
-                        [reviewId]="review.id"
-                        [initialLikes]="review.gradimento">
-                      </app-like-dislike-component>
-                   </div>
-                </mat-card-content>
-              </mat-card>
+                    <mat-card-content class="recensione-testo">
+                      {{review.testoRecensione || 'Testo recensione'}}
+                      <div class="likes-div" style="justify-content:center; margin-top:10px;">
+                      </div>
+                    </mat-card-content>
+                    <app-like-dislike-component
+                      [reviewId]="review.id"
+                      [initialLikes]="review.gradimento"
+                      [initialDislikes]="review.contrasto">
+                    </app-like-dislike-component>
+                  </mat-card>
+                </div>
             </div>
-        </div>
-        }
+            }
 
-        @case ("6"){
-        <div *ngFor="let review of getIdReview(6)">
-            <div class="recensioni-cards">
-              <mat-card style="height:100%;">
-                <mat-card-header>
-                  <mat-card-title-group>
-                    <mat-card-title class="nome-cognome">{{(review.nome || '') + ' ' + (review.cognome || '') || 'Nome utente'}}</mat-card-title>
-                  </mat-card-title-group>
-                </mat-card-header>
+            @case ("3"){
+            <div *ngFor="let review of getIdReview(3)">
+                <div class="recensioni-cards">
+                  <mat-card style="height:100%;">
+                    <mat-card-header>
+                      <mat-card-title-group>
+                        <mat-card-title class="nome-cognome">{{(review.nome || '') + ' ' + (review.cognome || '') || 'Nome utente'}}</mat-card-title>
+                      </mat-card-title-group>
+                    </mat-card-header>
 
-                <mat-card-content class="recensione-testo">
-                  {{review.testoRecensione || 'Testo recensione'}}
-                  <div class="likes-div" style="justify-content:center; margin-top:10px;">
-                      <app-like-dislike-component
-                        [reviewId]="review.id"
-                        [initialLikes]="review.gradimento">
-                      </app-like-dislike-component>
-                   </div>
-                </mat-card-content>
-              </mat-card>
+                    <mat-card-content class="recensione-testo">
+                      {{review.testoRecensione || 'Testo recensione'}}
+                      <div class="likes-div" style="justify-content:center; margin-top:10px;">
+                      </div>
+                    </mat-card-content>
+                    <app-like-dislike-component
+                      [reviewId]="review.id"
+                      [initialLikes]="review.gradimento"
+                      [initialDislikes]="review.contrasto">
+                    </app-like-dislike-component>
+                  </mat-card>
+                </div>
             </div>
-        </div>
+            }
+            
+            @case ("4"){
+            <div *ngFor="let review of getIdReview(4)">
+                <div class="recensioni-cards">
+                  <mat-card style="height:100%;">
+                    <mat-card-header>
+                      <mat-card-title-group>
+                        <mat-card-title class="nome-cognome">{{(review.nome || '') + ' ' + (review.cognome || '') || 'Nome utente'}}</mat-card-title>
+                      </mat-card-title-group>
+                    </mat-card-header>
+
+                    <mat-card-content class="recensione-testo">
+                      {{review.testoRecensione || 'Testo recensione'}}
+                      <div class="likes-div" style="justify-content:center; margin-top:10px;">
+                      </div>
+                    </mat-card-content>
+                    <app-like-dislike-component
+                      [reviewId]="review.id"
+                      [initialLikes]="review.gradimento"
+                      [initialDislikes]="review.contrasto">
+                    </app-like-dislike-component>
+                  </mat-card>
+                </div>
+            </div>
+            }
+
+            @case ("5"){
+            <div *ngFor="let review of getIdReview(5)">
+                <div class="recensioni-cards">
+                  <mat-card style="height:100%;">
+                    <mat-card-header>
+                      <mat-card-title-group>
+                        <mat-card-title class="nome-cognome">{{(review.nome || '') + ' ' + (review.cognome || '') || 'Nome utente'}}</mat-card-title>
+                      </mat-card-title-group>
+                    </mat-card-header>
+
+                    <mat-card-content class="recensione-testo">
+                      {{review.testoRecensione || 'Testo recensione'}}
+                      <div class="likes-div" style="justify-content:center; margin-top:10px;">
+                      </div>
+                    </mat-card-content>
+                    <app-like-dislike-component
+                      [reviewId]="review.id"
+                      [initialLikes]="review.gradimento"
+                      [initialDislikes]="review.contrasto">
+                    </app-like-dislike-component>
+                  </mat-card>
+                </div>
+            </div>
+            }
+
+            @case ("6"){
+            <div *ngFor="let review of getIdReview(6)">
+                <div class="recensioni-cards">
+                  <mat-card style="height:100%;">
+                    <mat-card-header>
+                      <mat-card-title-group>
+                        <mat-card-title class="nome-cognome">{{(review.nome || '') + ' ' + (review.cognome || '') || 'Nome utente'}}</mat-card-title>
+                      </mat-card-title-group>
+                    </mat-card-header>
+
+                    <mat-card-content class="recensione-testo">
+                      {{review.testoRecensione || 'Testo recensione'}}
+                      <div class="likes-div" style="justify-content:center; margin-top:10px;">
+                      </div>
+                    </mat-card-content>
+                    <app-like-dislike-component
+                      [reviewId]="review.id"
+                      [initialLikes]="review.gradimento"
+                      [initialDislikes]="review.contrasto">
+                    </app-like-dislike-component>
+                  </mat-card>
+                </div>
+            </div>
+            }
         }
-    }
-    </div>
+        </div>
+
+      </div>
+  </div>
+  
+    <app-footer></app-footer>
+
 </div>

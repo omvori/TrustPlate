@@ -22,6 +22,8 @@ import { PaginaRistoranti } from './pagina-ristoranti/pagina-ristoranti';
 import { HomeComponent } from './home-component/home-component';
 import { RouterModule } from '@angular/router';
 import { LikeDislikeComponent } from './like-dislike-component/like-dislike-component';
+import { Toolbar } from './toolbar/toolbar';
+import { Footer } from './footer/footer';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { LikeDislikeComponent } from './like-dislike-component/like-dislike-comp
     MenuTendina,
     PaginaRistoranti,
     HomeComponent,
-    LikeDislikeComponent
+    LikeDislikeComponent,
+    Toolbar,
+    Footer
   ],
   imports: [
     BrowserModule,

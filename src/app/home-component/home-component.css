@@ -1,0 +1,97 @@
+body{
+  padding: 0;
+  margin: 0;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh
+}
+h1{
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 1px;
+  cursor:grab
+}
+h1 span{
+  transition: .3s linear
+}
+h1:hover span:nth-child(1){
+  margin-right: 5px
+}
+h1:hover span:nth-child(1):after{
+  content: "";
+}
+h1:hover span:nth-child(2){
+  margin-left: 30px
+}
+h1:hover span{
+  color: #fff;
+  text-shadow: 0 0 10px #fff,
+               0 0 20px #fff, 
+               0 0 40px #fff;
+}
+/*made with ❤, by qpi65*/
+.title{
+    font-size: 90px;
+    font-family: system-ui, -apple-system;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 80px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 50px;
+    }
+    h1 {
+        font-size: 8px;
+        letter-spacing: 0.5px;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .title {
+        font-size: 0px;
+    }
+}
+
+.header{
+  text-align: center;
+  padding: 10px 30px;
+  margin-bottom: 40px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(77, 52, 77);
+  transition: transform 0.3 ease;
+}
+
+.text-under-title{
+  text-align: center;
+  font-size: 15px;
+  opacity: 0.9;
+  font-weight: 200px;
+  font-style: italic;
+}
+
+.rm-reviews-button{
+  align-items: center;
+  padding: 12px 25px;
+  color: white;
+  background-color: rgb(237, 40, 40);
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(255,71,87,0.4);
+}

@@ -40,7 +40,8 @@ def add_review():
             "cognome":data.get('cognome',''),
             "testoRecensione": data.get('testoRecensione'),
             "idRistorante": data.get('idRistorante',''),
-            "gradimento": 0
+            "gradimento": 0,
+            "contrasto" : 0
         }
         review_list.append(nuova_recensione)
 
@@ -99,6 +100,29 @@ def update_gradimento(review_id):
                 return jsonify({
                     "success":True,
                     "nuovo_gradimento":recensione['gradimento']
+                }), 200
+        return jsonify({"error":"recensione non trovata"}),404
+    
+    except Exception as e:
+        return jsonify({"error":str(e)}),500
+    
+
+@app.route('/api/reviews/<review_id>/contrasto',methods=['PUT'])
+def update_contrasto(review_id):
+    try:
+        data = request.json
+        decremento = data.get('decremento',0)
+
+        for recensione in review_list:
+            if recensione['id'] == review_id:
+                recensione['contrasto'] = recensione.get('contrasto') - decremento
+
+                with open('reviews.json','w') as file:
+                    json.dump(review_list,file,indent=2)
+
+                return jsonify({
+                    "success":True,
+                    "nuovo_contrasto":recensione['contrasto']
                 }), 200
         return jsonify({"error":"recensione non trovata"}),404
     

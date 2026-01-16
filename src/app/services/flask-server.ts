@@ -26,4 +26,11 @@ export class FlaskServer {
     return this.http.put<any>(`${this.baseUrl}/reviews/${reviewId}/gradimento`,{incremento:incremento})
 
   };
+
+  updateContrasto(reviewId: string,decremento:number){
+    return this.http.put<any>(`${this.baseUrl}/reviews/${reviewId}/contrasto`,{decremento:decremento})
+
+  };
+
+  
 }
