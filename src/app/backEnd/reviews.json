@@ -1,29 +1,22 @@
 [
   {
-    "id": "0c40901f-6c45-4c77-8976-2e7fe06abe20",
-    "nome": "Marcello",
-    "cognome": "Crocca",
-    "testoRecensione": "Vengo spesso a Milano,e da sempre incuriosita da questo locale che ho deciso di visitare il 30 dicembre in pieno clima festivo con la galleria tutta illuminata, ma ne sono rimasta delusa.\nAbbiamo preso una cioccolata con panna che mi \u00e8 stata portata separata in una ciotola brutta anche da vedere , panna di bassa qualit\u00e0, quasi liquida senza sapore, anzi non classificabile davvero, e un marocchino deludente, per non parlare dei macarons secchi veramente immangiabili.\nPoi ci siamo recate ai servizi e siamo rimaste sconvolte: bagno sporchissimo completamente pieno di liquidi sia a terra che sul piano del lavandino; non \u00e8 accettabile che un posto del genere in galleria dia un servizio cos\u00ec , veramente ai limiti delle minime regole sanitarie.\nIl servizio scadente: non avevo ancora finito la consumazione , che gi\u00e0 stavano togliendo la mia tazza.\nEsperienza da non ripetere mai piu'!\nPeccato, xch\u00e8 il servizio e la qualit\u00e0 dovrebbero essere all'altezza del posto ,che merita veramente la cura di ogni piccolo dettaglio, che invece manca completamente.PECCATO!!!!",
+    "id": "b86acaa4-7845-45de-ac5e-eb13b1245106",
+    "nome": "Andrea",
+    "cognome": "sdsd",
+    "testoRecensione": "Saaooo",
     "idRistorante": "1",
-    "gradimento": 11,
-    "contrasto": 14
+    "gradimento": 0,
+    "contrasto": 0
   },
   {
-    "id": "31169665-2022-455d-9acc-477c4d502896",
-    "nome": "Loredana ",
-    "cognome": "Fratellini",
-    "testoRecensione": "Attivit\u00e0 molto bene organizzata e coinvolgente, particolarmente apprezzata la cura dei dettagli . Consigliata.",
+    "id": "1509654f-82f7-4f2b-b7e4-1e2dda3d93f6",
+    "nome": "Mirko",
+    "cognome": "Bleu",
+    "testoRecensione": "Non ci siamo",
     "idRistorante": "1",
-    "gradimento": 5,
-    "contrasto": 4
-  },
-  {
-    "id": "b23880e7-3531-4003-87e6-3bb0981a934f",
-    "nome": "Marisa",
-    "cognome": "Belli",
-    "testoRecensione": "Che dire, un nome una garanzia",
-    "idRistorante": "3",
     "gradimento": 0,
     "contrasto": 0
   }
+
+  
 ]

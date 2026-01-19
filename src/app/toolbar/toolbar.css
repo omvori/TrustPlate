@@ -19,7 +19,7 @@
 
 .title{
     font-size: 50px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Arial, sans-serif;
     font-weight: bold;
     font-style: italic;
 }
@@ -48,8 +48,7 @@
 
 
 mat-toolbar {
-  background: linear-gradient(135deg, #3a4472 0%, #764ba2 100%);
-  color: white;
+  background-color: rgb(77, 52, 77);  color: white;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   height:110px;
 }
