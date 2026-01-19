@@ -12,6 +12,7 @@ import jsonData from '../backEnd/reviews.json'
 export class HomeComponent implements OnInit {
 
   reviews : any [] = [];
+  
 
   constructor(private flaskService: FlaskServer,private cdr:ChangeDetectorRef){}
 

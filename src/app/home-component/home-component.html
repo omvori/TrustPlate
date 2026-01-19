@@ -1,60 +1,35 @@
 <div class="container_app">
-  <header class="header">
+
   
-    <div class="header-title-box">
-      <h1 class="title"><span>Trust</span><span>Plate</span></h1>
-      
-      <p class="text-under-title">Lascia una tua recensione per aiutare altri utenti, o consulta quelle già presenti !</p>
-      
+    <header class="header">
+      <div class="header-title-box">
+        <div class="box-text-under-title">
+        </div> 
+        <div class="logo-box">
+          <img alt="logo-img" src="Gemini_Generated_Image_1x0nl31x0nl31x0n-removebg-preview.png">
+          <h1  class="title"><span>Trust</span><span>Plate</span></h1>
+        </div>
+      </div>
+    </header>
+    
+
+ <div class="content-container" animate.enter="enter-animation">
+   <div class="content">
+     <app-input-card (newReview)="addReview($event)"></app-input-card>
+     <app-cards-to-review [reviews]="reviews"> </app-cards-to-review>
+    </div>
+
+  </div>
+  <!--footer-->
+    <div class="div-bottone">
+    
       <button class="rm-reviews-button" 
-      (click)="removeReviews()" >
+      (click)="removeReviews()"  >
         Reset sito
       </button>
-  </div>
-</header>
-
-
-<!--routing all'altra pagina dei ristoranti
-
-<button routerLink="/ristoranti">Ristoranti</button>
--->
-
-
-
-<div  class="main_content">
-  <!--input form-->
-  <app-input-card (newReview)="addReview($event)"></app-input-card>
     </div>
-        
-      <div>
-        <!--cards ristoranti-->
-        <app-cards-to-review [reviews]="reviews"> </app-cards-to-review>
-      </div>
-
-     <!-- <div [ngStyle]="{
-      display:'flex',
-        flexDirection:'column',
-        gap:'25px'
-        }">
-        <app-recensioni-cards 
-          *ngFor="let review of reviews; let i = index" 
-          [reviewData]="review">
-        </app-recensioni-cards>
-      </div>
-</div>
-
--->
-
- <!-- <footer [ngStyle]="{
-    textAlign:'center',
-    padding:'20px',
-    marginTop:'40px',
-    borderTop:'1px solid',
-    color:'Red'
-  }"class="footer">
-    <p class="storage_info">
-      Numero review nel sito: {{reviews.length}}
-    </p>
-
-  </footer> -->
+    <app-footer>
+      
+    </app-footer>
+  
 </div>
