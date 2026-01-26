@@ -24,6 +24,7 @@ import { RouterModule } from '@angular/router';
 import { LikeDislikeComponent } from './like-dislike-component/like-dislike-component';
 import { Toolbar } from './toolbar/toolbar';
 import { Footer } from './footer/footer';
+import { provideHttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,7 @@ import { Footer } from './footer/footer';
     RouterModule
 ],
   providers: [ServizioProva, 
-    provideBrowserGlobalErrorListeners()
+    provideBrowserGlobalErrorListeners(),provideHttpClient()
   ],
   bootstrap: [App]
 })

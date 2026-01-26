@@ -92,6 +92,7 @@ h1:hover span{
   color: rgb(255, 255, 255);
   background-color: rgb(77, 52, 77);
   z-index: 1000;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 
 }
 

@@ -9,7 +9,12 @@
             @case ("1") {
               
                 <h1>Da Gustave</h1>
-                <p>Ristorante italiano tradizionale con specialità di pasta fresca e atmosfera familiare. Da Gustave è famoso per le sue porzioni abbondanti e il servizio cordiale.</p>
+                <p>Genera un riassunto sull'umore del ristorante da parte dei clienti</p>
+                <button (click)="generateComment()" [disabled]="isLoadingAi || ristoReview.length === 0">Premi per vincere un iphone 14promax</button>
+                <div *ngIf="contenutoAi" style="margin-top: 15px;">
+                  <strong>Risultato:</strong>
+                    <p style="white-space: pre-wrap;">{{ contenutoAi }}</p>
+                 </div>
             }
             @case ("2") {
                 <h1>Lune's Dream</h1>
