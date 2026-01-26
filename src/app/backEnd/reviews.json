@@ -1,22 +1,902 @@
 [
   {
-    "id": "b86acaa4-7845-45de-ac5e-eb13b1245106",
-    "nome": "Andrea",
-    "cognome": "sdsd",
-    "testoRecensione": "Saaooo",
+    "id": "50718013-aa82-4c68-a39b-0d45e41f6d18",
+    "nome": "Mirco",
+    "cognome": "Gatto",
+    "testoRecensione": "Maleducazione unica, ci hanno quasi cacciati perch\u00e9 chiudevano.",
+    "idRistorante": "5",
+    "gradimento": 5,
+    "contrasto": 3
+  },
+  {
+    "id": "a535d674-e36c-43a1-a367-ae945b1a7f08",
+    "nome": "Gianfranco",
+    "cognome": "Vespucci",
+    "testoRecensione": "Se potessi dare zero stelle lo farei.",
+    "idRistorante": "6",
+    "gradimento": 1,
+    "contrasto": 0
+  },
+  {
+    "id": "95ce3d93-f02c-48b5-8647-78d8b90d6f91",
+    "nome": "Bernardo",
+    "cognome": "Pozzecco",
+    "testoRecensione": "Cibo arrivato freddo e dopo un'ora di attesa.",
     "idRistorante": "1",
+    "gradimento": 3,
+    "contrasto": 1
+  },
+  {
+    "id": "484c29b2-d76e-440f-89f4-c60135c14cb5",
+    "nome": "Lara",
+    "cognome": "Boccherini",
+    "testoRecensione": "Maleducazione unica, ci hanno quasi cacciati perch\u00e9 chiudevano.",
+    "idRistorante": "4",
+    "gradimento": 8,
+    "contrasto": 0
+  },
+  {
+    "id": "bc02a12b-7ebf-477c-ac98-e9c8fa917a1b",
+    "nome": "Puccio",
+    "cognome": "Garozzo",
+    "testoRecensione": "L'antipasto era palesemente riscaldato al microonde.",
+    "idRistorante": "2",
+    "gradimento": 2,
+    "contrasto": 7
+  },
+  {
+    "id": "20a21bf4-db3e-4d35-bfc1-d7268c8f1589",
+    "nome": "Giuliana",
+    "cognome": "Chinnici",
+    "testoRecensione": "Buona la materia prima, ma cucinata senza troppa fantasia.",
+    "idRistorante": "6",
+    "gradimento": 4,
+    "contrasto": 2
+  },
+  {
+    "id": "96305a95-1e56-4d05-adfb-efb8a41207a7",
+    "nome": "Flavio",
+    "cognome": "Vendetti",
+    "testoRecensione": "Cucina autentica e sapori genuini, come una volta.",
+    "idRistorante": "1",
+    "gradimento": 9,
+    "contrasto": 8
+  },
+  {
+    "id": "42078954-1bfa-4747-b2e7-6ce95f87c895",
+    "nome": "Vito",
+    "cognome": "Bernardi",
+    "testoRecensione": "I piatti sono arrivati caldi e in tempi rapidissimi.",
+    "idRistorante": "5",
+    "gradimento": 1,
+    "contrasto": 2
+  },
+  {
+    "id": "e2b585d7-e1a9-4491-9a03-a741e51230c7",
+    "nome": "Silvio",
+    "cognome": "Camilleri",
+    "testoRecensione": "Ho chiesto il conto tre volte prima di riceverlo.",
+    "idRistorante": "3",
+    "gradimento": 6,
+    "contrasto": 0
+  },
+  {
+    "id": "af74d371-36f0-4b0a-a5d8-c9980cae2954",
+    "nome": "Paolo",
+    "cognome": "Pizzamano",
+    "testoRecensione": "Ottima opzione anche per vegetariani, piatti molto creativi.",
+    "idRistorante": "5",
+    "gradimento": 8,
+    "contrasto": 10
+  },
+  {
+    "id": "01622ffc-6343-4939-a55a-0c67bb1de301",
+    "nome": "Napoleone",
+    "cognome": "Ruffini",
+    "testoRecensione": "Servizio disorganizzato, hanno sbagliato le ordinazioni tre volte.",
+    "idRistorante": "2",
+    "gradimento": 1,
+    "contrasto": 1
+  },
+  {
+    "id": "83721cf6-e3fb-4507-b4c5-c3b77bbfe7d3",
+    "nome": "Gianfrancesco",
+    "cognome": "Garozzo",
+    "testoRecensione": "Prezzo onesto per la qualit\u00e0 offerta. Torneremo sicuramente.",
+    "idRistorante": "5",
+    "gradimento": 2,
+    "contrasto": 4
+  },
+  {
+    "id": "3e3115f1-96bf-4e82-99fd-0c3ddab92c91",
+    "nome": "Antonio",
+    "cognome": "Quasimodo",
+    "testoRecensione": "Personale sorridente e disponibile, ci siamo sentiti a casa.",
+    "idRistorante": "4",
+    "gradimento": 0,
+    "contrasto": 1
+  },
+  {
+    "id": "0458479d-7de2-4f8a-b9b4-d159a64e7912",
+    "nome": "Fernanda",
+    "cognome": "Mercadante",
+    "testoRecensione": "Hanno accolto il nostro cane con una ciotola d'acqua, molto gentili.",
+    "idRistorante": "1",
+    "gradimento": 1,
+    "contrasto": 10
+  },
+  {
+    "id": "eb43b415-87b5-4257-917a-5b4b57e72c48",
+    "nome": "Costantino",
+    "cognome": "Cesarotti",
+    "testoRecensione": "Pausa pranzo veloce ma di qualit\u00e0, bravi.",
+    "idRistorante": "1",
+    "gradimento": 3,
+    "contrasto": 0
+  },
+  {
+    "id": "29b9bfdf-9ac2-4ad3-9eb1-109c879e5adc",
+    "nome": "Mauro",
+    "cognome": "Magnani",
+    "testoRecensione": "L'ambiente \u00e8 molto bello, peccato che la cucina non sia all'altezza.",
+    "idRistorante": "6",
+    "gradimento": 8,
+    "contrasto": 3
+  },
+  {
+    "id": "f266f652-b0ec-4d3a-a381-7925973f4f44",
+    "nome": "Benito",
+    "cognome": "Brichese",
+    "testoRecensione": "Porzioni abbondanti e prezzi molto competitivi.",
+    "idRistorante": "4",
+    "gradimento": 10,
+    "contrasto": 7
+  },
+  {
+    "id": "d49eeaa9-8bcc-4fcb-bb51-2d3c2bc128ea",
+    "nome": "Mariano",
+    "cognome": "Liguori",
+    "testoRecensione": "Cucina autentica e sapori genuini, come una volta.",
+    "idRistorante": "6",
+    "gradimento": 2,
+    "contrasto": 3
+  },
+  {
+    "id": "782c26ad-399c-4c89-853a-464b20780989",
+    "nome": "Germana",
+    "cognome": "Berr\u00e8",
+    "testoRecensione": "Non hanno rispettato la mia allergia nonostante l'avessi segnalata.",
+    "idRistorante": "5",
+    "gradimento": 6,
+    "contrasto": 5
+  },
+  {
+    "id": "d761a69a-57eb-404f-9346-a9bb915e48d7",
+    "nome": "Danilo",
+    "cognome": "Taliercio",
+    "testoRecensione": "Accettabile se non avete grandi pretese.",
+    "idRistorante": "3",
+    "gradimento": 8,
+    "contrasto": 7
+  },
+  {
+    "id": "443b642c-0874-4340-9667-6e3ba6523790",
+    "nome": "Vincentio",
+    "cognome": "Vittadello",
+    "testoRecensione": "Locale pulito, ma l'atmosfera \u00e8 un po' fredda.",
+    "idRistorante": "1",
+    "gradimento": 3,
+    "contrasto": 3
+  },
+  {
+    "id": "2c22bb72-ad0b-4297-8bc1-eecbf8ecb398",
+    "nome": "Isa",
+    "cognome": "Cherubini",
+    "testoRecensione": "Non accettano il bancomat nel 2024, assurdo.",
+    "idRistorante": "2",
+    "gradimento": 0,
+    "contrasto": 7
+  },
+  {
+    "id": "143c5d42-6c9b-413d-b501-af8c71788030",
+    "nome": "Graziella",
+    "cognome": "Visconti",
+    "testoRecensione": "Arredamento moderno e musica di sottofondo piacevole.",
+    "idRistorante": "1",
+    "gradimento": 4,
+    "contrasto": 1
+  },
+  {
+    "id": "a048ef62-8891-49c2-8080-752438b20fdb",
+    "nome": "Romeo",
+    "cognome": "Scarfoglio",
+    "testoRecensione": "Il menu degustazione \u00e8 un viaggio nei sapori, da provare.",
+    "idRistorante": "5",
+    "gradimento": 2,
+    "contrasto": 3
+  },
+  {
+    "id": "d12278e4-3a80-45b2-a959-1ec15ed84d11",
+    "nome": "Gaspare",
+    "cognome": "Montanari",
+    "testoRecensione": "Frittura di pesce leggera e non unta, ottima.",
+    "idRistorante": "2",
+    "gradimento": 4,
+    "contrasto": 0
+  },
+  {
+    "id": "a9016f40-f6f8-443a-9539-60c5299a339e",
+    "nome": "Maurizio",
+    "cognome": "Casini",
+    "testoRecensione": "Porzioni un po' scarse rispetto al prezzo pagato.",
+    "idRistorante": "1",
+    "gradimento": 7,
+    "contrasto": 2
+  },
+  {
+    "id": "463c4124-6b81-4a4a-90e5-4c3b4362aae5",
+    "nome": "Armando",
+    "cognome": "Tarantini",
+    "testoRecensione": "Rapporto qualit\u00e0-prezzo imbattibile in questa zona.",
+    "idRistorante": "3",
+    "gradimento": 6,
+    "contrasto": 1
+  },
+  {
+    "id": "57a42ea0-27b2-4dd3-94aa-e33624810e4b",
+    "nome": "Lina",
+    "cognome": "Gotti",
+    "testoRecensione": "Servizio lentissimo, abbiamo saltato il dolce per la disperazione.",
+    "idRistorante": "3",
+    "gradimento": 5,
+    "contrasto": 3
+  },
+  {
+    "id": "1ab50cab-3a40-438d-97c3-b0f9155a554e",
+    "nome": "Annetta",
+    "cognome": "Detti",
+    "testoRecensione": "Rumore assordante, impossibile parlare con chi si ha di fronte.",
+    "idRistorante": "6",
+    "gradimento": 6,
+    "contrasto": 1
+  },
+  {
+    "id": "a6a628ea-5995-473a-baca-8d6aa7d8264d",
+    "nome": "Caterina",
+    "cognome": "Salvemini",
+    "testoRecensione": "I piatti sono arrivati caldi e in tempi rapidissimi.",
+    "idRistorante": "5",
+    "gradimento": 3,
+    "contrasto": 3
+  },
+  {
+    "id": "4870c3c2-a391-40f4-af77-a99814bae2fd",
+    "nome": "Elena",
+    "cognome": "Migliaccio",
+    "testoRecensione": "Tavoli troppo vicini tra loro, poca privacy.",
+    "idRistorante": "6",
+    "gradimento": 5,
+    "contrasto": 4
+  },
+  {
+    "id": "6b1fcd30-863c-41e7-867f-f5b9d47dcda1",
+    "nome": "Liana",
+    "cognome": "Vigorelli",
+    "testoRecensione": "La pasta fatta in casa ha tutto un altro sapore.",
+    "idRistorante": "3",
+    "gradimento": 3,
+    "contrasto": 8
+  },
+  {
+    "id": "2113a3b3-63fc-4292-a9b4-a5baad669b3e",
+    "nome": "Emilio",
+    "cognome": "Marino",
+    "testoRecensione": "Il personale correva troppo, mettendoci ansia.",
+    "idRistorante": "6",
+    "gradimento": 8,
+    "contrasto": 6
+  },
+  {
+    "id": "42cb6a9a-ebb1-4ef4-abb9-95e3f19209f2",
+    "nome": "Ippazio",
+    "cognome": "Fantozzi",
+    "testoRecensione": "Il risotto era salatissimo, impossibile da finire.",
+    "idRistorante": "2",
+    "gradimento": 10,
+    "contrasto": 10
+  },
+  {
+    "id": "ff0ddb8a-5e25-4f63-a004-d5ff56491144",
+    "nome": "Ermanno",
+    "cognome": "Tirabassi",
+    "testoRecensione": "Esperienza pessima, non ci torner\u00f2 mai pi\u00f9.",
+    "idRistorante": "1",
+    "gradimento": 5,
+    "contrasto": 10
+  },
+  {
+    "id": "773301fd-190a-4466-8d57-8ff543d14586",
+    "nome": "Isa",
+    "cognome": "Toldo",
+    "testoRecensione": "Buono, ma non indimenticabile.",
+    "idRistorante": "4",
+    "gradimento": 3,
+    "contrasto": 10
+  },
+  {
+    "id": "02656007-4535-44e9-82a6-6a88df790af5",
+    "nome": "Ignazio",
+    "cognome": "Tosto",
+    "testoRecensione": "Conto salatissimo e pieno di voci extra non richieste.",
+    "idRistorante": "3",
+    "gradimento": 6,
+    "contrasto": 1
+  },
+  {
+    "id": "55841fb7-1b30-4499-a78e-769f82cf1efb",
+    "nome": "Osvaldo",
+    "cognome": "Franscini",
+    "testoRecensione": "Prezzi leggermente alti per quello che abbiamo mangiato.",
+    "idRistorante": "1",
+    "gradimento": 4,
+    "contrasto": 4
+  },
+  {
+    "id": "65b50343-a921-4923-9966-f8b768de94c6",
+    "nome": "Renzo",
+    "cognome": "Golgi",
+    "testoRecensione": "Buono, ma il servizio \u00e8 stato decisamente troppo lento.",
+    "idRistorante": "5",
+    "gradimento": 2,
+    "contrasto": 2
+  },
+  {
+    "id": "12e2ee67-719c-4ef5-8b27-7d7d63cd3060",
+    "nome": "Giacobbe",
+    "cognome": "Randazzo",
+    "testoRecensione": "Il risotto era mantecato alla perfezione.",
+    "idRistorante": "3",
+    "gradimento": 9,
+    "contrasto": 2
+  },
+  {
+    "id": "0c716a47-b879-4f46-bac8-f49ace35f77f",
+    "nome": "Paloma",
+    "cognome": "Dovara",
+    "testoRecensione": "Esperienza pessima, non ci torner\u00f2 mai pi\u00f9.",
+    "idRistorante": "1",
+    "gradimento": 4,
+    "contrasto": 1
+  },
+  {
+    "id": "c0773267-f1de-41f6-bee3-5970098d0e7e",
+    "nome": "Nanni",
+    "cognome": "Pacetti",
+    "testoRecensione": "Pulizia top e rispetto delle norme igieniche.",
+    "idRistorante": "4",
+    "gradimento": 10,
+    "contrasto": 10
+  },
+  {
+    "id": "a9d19740-c710-4930-bc22-0be4fee2972a",
+    "nome": "Sandro",
+    "cognome": "Agnesi",
+    "testoRecensione": "Non accettano il bancomat nel 2024, assurdo.",
+    "idRistorante": "6",
+    "gradimento": 3,
+    "contrasto": 1
+  },
+  {
+    "id": "9ba267e0-d29c-4071-acba-5529fa23f2c1",
+    "nome": "Dante",
+    "cognome": "Paoletti",
+    "testoRecensione": "Frittura di pesce leggera e non unta, ottima.",
+    "idRistorante": "6",
+    "gradimento": 0,
+    "contrasto": 8
+  },
+  {
+    "id": "edd892d3-2c40-4cab-8846-1a19eadac211",
+    "nome": "Vittorio",
+    "cognome": "Columbo",
+    "testoRecensione": "Ci hanno fatto sedere vicino alla porta del bagno, terribile.",
+    "idRistorante": "6",
+    "gradimento": 10,
+    "contrasto": 8
+  },
+  {
+    "id": "e5dc9b38-e07b-4fee-b433-0c0bb24dadfb",
+    "nome": "Stella",
+    "cognome": "Verri",
+    "testoRecensione": "Il dolce era vecchio e secco.",
+    "idRistorante": "6",
+    "gradimento": 7,
+    "contrasto": 9
+  },
+  {
+    "id": "38b36795-41a0-47a4-9aec-352e63ae3d75",
+    "nome": "Lamberto",
+    "cognome": "Maggioli",
+    "testoRecensione": "Il tiramis\u00f9 fatto in casa \u00e8 qualcosa di spettacolare.",
+    "idRistorante": "3",
+    "gradimento": 1,
+    "contrasto": 0
+  },
+  {
+    "id": "57c12991-02f6-4b28-9b3d-be652d0cbd2b",
+    "nome": "Gloria",
+    "cognome": "Tresoldi",
+    "testoRecensione": "Non so se ci tornerei, ci sono posti migliori in zona.",
+    "idRistorante": "3",
+    "gradimento": 10,
+    "contrasto": 5
+  },
+  {
+    "id": "168f1a11-2c8c-4aae-8fe1-cbb86da02104",
+    "nome": "Adele",
+    "cognome": "Gramsci",
+    "testoRecensione": "Personale sorridente e disponibile, ci siamo sentiti a casa.",
+    "idRistorante": "3",
+    "gradimento": 2,
+    "contrasto": 3
+  },
+  {
+    "id": "aee0d88e-1ccf-44cf-940e-e71acc370c5d",
+    "nome": "Rembrandt",
+    "cognome": "Micheletti",
+    "testoRecensione": "Cocktail buonissimi per accompagnare la cena.",
+    "idRistorante": "2",
+    "gradimento": 10,
+    "contrasto": 8
+  },
+  {
+    "id": "b7911754-cce0-4932-864a-4ea44309cc7b",
+    "nome": "Gianni",
+    "cognome": "Tomasetti",
+    "testoRecensione": "Men\u00f9 con poca scelta, avrei gradito pi\u00f9 variet\u00e0.",
+    "idRistorante": "5",
+    "gradimento": 10,
+    "contrasto": 9
+  },
+  {
+    "id": "6fd3ff31-90b1-440a-bb78-e6717b8ebb4e",
+    "nome": "Gemma",
+    "cognome": "Bonaventura",
+    "testoRecensione": "Va bene per una volta, non diventera il mio preferito.",
+    "idRistorante": "5",
+    "gradimento": 10,
+    "contrasto": 0
+  },
+  {
+    "id": "2c827c0f-1a99-45a0-9f5c-a7dd6598b08c",
+    "nome": "Zaira",
+    "cognome": "Medici",
+    "testoRecensione": "La pizza era buona, ma il dolce mi ha deluso.",
+    "idRistorante": "5",
+    "gradimento": 8,
+    "contrasto": 4
+  },
+  {
+    "id": "74ced4d8-120e-4bd1-8c55-1570ee534983",
+    "nome": "Lidia",
+    "cognome": "Catalano",
+    "testoRecensione": "Servizio impeccabile e veloce, consigliatissimo!",
+    "idRistorante": "6",
+    "gradimento": 5,
+    "contrasto": 0
+  },
+  {
+    "id": "871db640-552c-4aa8-858c-c809b1f20418",
+    "nome": "Fabrizia",
+    "cognome": "Pratesi",
+    "testoRecensione": "Maleducazione unica, ci hanno quasi cacciati perch\u00e9 chiudevano.",
+    "idRistorante": "6",
+    "gradimento": 4,
+    "contrasto": 1
+  },
+  {
+    "id": "29340db8-a0b7-4d33-a27a-06c02db2d396",
+    "nome": "Arturo",
+    "cognome": "Antonini",
+    "testoRecensione": "La location merita 10, il cibo 5.",
+    "idRistorante": "3",
+    "gradimento": 10,
+    "contrasto": 3
+  },
+  {
+    "id": "2f63b9a7-2218-478d-862e-d482689e974e",
+    "nome": "Rita",
+    "cognome": "Trezzini",
+    "testoRecensione": "L'acqua del rubinetto fatta pagare come acqua in bottiglia.",
+    "idRistorante": "4",
+    "gradimento": 6,
+    "contrasto": 9
+  },
+  {
+    "id": "1b0bacc0-c9d8-4f14-a68d-b737e179d43e",
+    "nome": "Gilberto",
+    "cognome": "Fogazzaro",
+    "testoRecensione": "Il conto era giusto, ma il cibo non aveva molto sapore.",
+    "idRistorante": "5",
+    "gradimento": 6,
+    "contrasto": 6
+  },
+  {
+    "id": "785f9ce3-3f48-4981-ad7a-4cee43ad6f98",
+    "nome": "Uberto",
+    "cognome": "Tacchini",
+    "testoRecensione": "Posto carino, peccato che i piatti fossero un po' freddi.",
+    "idRistorante": "1",
+    "gradimento": 4,
+    "contrasto": 6
+  },
+  {
+    "id": "b8a92225-7244-4eac-9774-89a9649f38cb",
+    "nome": "Alessandra",
+    "cognome": "Contarini",
+    "testoRecensione": "Un esempio di come si dovrebbe gestire un ristorante.",
+    "idRistorante": "5",
+    "gradimento": 10,
+    "contrasto": 10
+  },
+  {
+    "id": "8803dae7-530d-424a-bc13-ae5a591f8e5c",
+    "nome": "Aria",
+    "cognome": "Acerbi",
+    "testoRecensione": "Un posto onesto, niente di memorabile.",
+    "idRistorante": "1",
+    "gradimento": 6,
+    "contrasto": 3
+  },
+  {
+    "id": "d1d045a6-5b94-4198-8109-d643ba42f0b9",
+    "nome": "Gemma",
+    "cognome": "Tosi",
+    "testoRecensione": "Cibo arrivato freddo e dopo un'ora di attesa.",
+    "idRistorante": "6",
+    "gradimento": 2,
+    "contrasto": 5
+  },
+  {
+    "id": "a8c7f2bb-6ad1-4c0d-9bda-cf90a3ac96a0",
+    "nome": "Ramona",
+    "cognome": "Querini",
+    "testoRecensione": "Pizza bruciata sotto e cruda sopra, immangiabile.",
+    "idRistorante": "4",
+    "gradimento": 8,
+    "contrasto": 10
+  },
+  {
+    "id": "44d1c502-f1f5-4040-b2d9-a614afe6ba4a",
+    "nome": "Clelia",
+    "cognome": "Tasso",
+    "testoRecensione": "Pane e grissini fatti in casa, dettagli che fanno la differenza.",
+    "idRistorante": "6",
+    "gradimento": 5,
+    "contrasto": 10
+  },
+  {
+    "id": "dd936d82-76f1-4b1a-93f9-74f7798a9797",
+    "nome": "Ilaria",
+    "cognome": "Pavanello",
+    "testoRecensione": "Ci hanno fatto sedere vicino alla porta del bagno, terribile.",
+    "idRistorante": "5",
+    "gradimento": 7,
+    "contrasto": 10
+  },
+  {
+    "id": "51191f73-d07d-49da-834b-84b7cf538255",
+    "nome": "Piermaria",
+    "cognome": "Soranzo",
+    "testoRecensione": "Cibo davvero ottimo e personale gentilissimo!",
+    "idRistorante": "6",
+    "gradimento": 8,
+    "contrasto": 8
+  },
+  {
+    "id": "e0a8379c-0379-4f1e-8c86-c6ab19b7d5e1",
+    "nome": "Romina",
+    "cognome": "Forza",
+    "testoRecensione": "Hanno servito prima tavoli arrivati dopo di noi.",
+    "idRistorante": "3",
+    "gradimento": 2,
+    "contrasto": 7
+  },
+  {
+    "id": "e3571872-29d9-4e14-bc5e-c76bb211119d",
+    "nome": "Ippazio",
+    "cognome": "Avogadro",
+    "testoRecensione": "Porzioni ridicole a prezzi esorbitanti.",
+    "idRistorante": "5",
+    "gradimento": 7,
+    "contrasto": 1
+  },
+  {
+    "id": "cc67abeb-8fef-41cf-a5a6-2183843fa0ee",
+    "nome": "Gionata",
+    "cognome": "Malacarne",
+    "testoRecensione": "Buono, ma il servizio \u00e8 stato decisamente troppo lento.",
+    "idRistorante": "1",
+    "gradimento": 2,
+    "contrasto": 7
+  },
+  {
+    "id": "a67c99c0-fa53-4e14-8f4e-aaa8b1413675",
+    "nome": "Atenulf",
+    "cognome": "Trevisani",
+    "testoRecensione": "Arredamento un po' datato, avrebbe bisogno di una svecchiata.",
+    "idRistorante": "6",
+    "gradimento": 2,
+    "contrasto": 3
+  },
+  {
+    "id": "2b14febb-ad96-4e9b-8a9e-8db113e93ef2",
+    "nome": "Romolo",
+    "cognome": "Barberini",
+    "testoRecensione": "Arredamento moderno e musica di sottofondo piacevole.",
+    "idRistorante": "2",
+    "gradimento": 0,
+    "contrasto": 10
+  },
+  {
+    "id": "751849bb-29b6-46b3-84cb-92b25e2e57d0",
+    "nome": "Luisa",
+    "cognome": "Cibin",
+    "testoRecensione": "Accettabile se non avete grandi pretese.",
+    "idRistorante": "2",
+    "gradimento": 1,
+    "contrasto": 5
+  },
+  {
+    "id": "13a1f8f5-43f2-4a7e-9318-c491b33c3a2a",
+    "nome": "Gloria",
+    "cognome": "Schiavo",
+    "testoRecensione": "Senza dubbio il miglior ristorante della citt\u00e0.",
+    "idRistorante": "1",
+    "gradimento": 10,
+    "contrasto": 0
+  },
+  {
+    "id": "0b260ac5-086e-4f37-864f-0cdb65d367a3",
+    "nome": "Piergiuseppe",
+    "cognome": "Bragaglia",
+    "testoRecensione": "Il vino era buono, il resto dimenticabile.",
+    "idRistorante": "3",
+    "gradimento": 1,
+    "contrasto": 7
+  },
+  {
+    "id": "53c019ec-4b1a-49f4-bd39-57dee08f8864",
+    "nome": "Vincenza",
+    "cognome": "Anichini",
+    "testoRecensione": "Il vino sapeva di tappo e non hanno voluto cambiarlo.",
+    "idRistorante": "5",
+    "gradimento": 8,
+    "contrasto": 4
+  },
+  {
+    "id": "3d1ca03f-bda8-4c95-a580-56083d3d4a65",
+    "nome": "Allegra",
+    "cognome": "Mondadori",
+    "testoRecensione": "Camerieri che ti ignorano completamente.",
+    "idRistorante": "1",
+    "gradimento": 4,
+    "contrasto": 5
+  },
+  {
+    "id": "efb28104-72ab-4a69-9431-5fe46afafff2",
+    "nome": "Valentina",
+    "cognome": "Cardano",
+    "testoRecensione": "Va bene per una volta, non diventera il mio preferito.",
+    "idRistorante": "4",
+    "gradimento": 6,
+    "contrasto": 6
+  },
+  {
+    "id": "6a42f4af-19ef-446e-ad30-aae6602fbd3d",
+    "nome": "Ciro",
+    "cognome": "Tozzo",
+    "testoRecensione": "Cucina casalinga, forse un po' troppo semplice.",
+    "idRistorante": "4",
+    "gradimento": 2,
+    "contrasto": 2
+  },
+  {
+    "id": "f7f56501-e101-4d0d-b044-597b8400aa1b",
+    "nome": "Coluccio",
+    "cognome": "Duse",
+    "testoRecensione": "Esperienza pessima, non ci torner\u00f2 mai pi\u00f9.",
+    "idRistorante": "2",
+    "gradimento": 10,
+    "contrasto": 5
+  },
+  {
+    "id": "5505ab0d-ff41-4796-b398-338370de6152",
+    "nome": "Gianluigi",
+    "cognome": "Medici",
+    "testoRecensione": "Buono, ma il servizio \u00e8 stato decisamente troppo lento.",
+    "idRistorante": "2",
     "gradimento": 0,
     "contrasto": 0
   },
   {
-    "id": "1509654f-82f7-4f2b-b7e4-1e2dda3d93f6",
-    "nome": "Mirko",
-    "cognome": "Bleu",
-    "testoRecensione": "Non ci siamo",
+    "id": "a4461517-b1b0-44ab-9430-877cce65f647",
+    "nome": "Irma",
+    "cognome": "Poerio",
+    "testoRecensione": "Atmosfera sgradevole e proprietario arrogante.",
+    "idRistorante": "3",
+    "gradimento": 5,
+    "contrasto": 1
+  },
+  {
+    "id": "958253b4-b2af-43c6-9eae-a73718e306cb",
+    "nome": "Nicola",
+    "cognome": "Beffa",
+    "testoRecensione": "Pulizia top e rispetto delle norme igieniche.",
     "idRistorante": "1",
-    "gradimento": 0,
+    "gradimento": 6,
     "contrasto": 0
+  },
+  {
+    "id": "8d66ec6a-1904-4bce-9cf3-2c3dd40e34b9",
+    "nome": "Atenulf",
+    "cognome": "Farinelli",
+    "testoRecensione": "La carne si scioglieva in bocca, cottura eccellente.",
+    "idRistorante": "6",
+    "gradimento": 0,
+    "contrasto": 5
+  },
+  {
+    "id": "16871985-41fc-4f43-b85e-689a53c342ae",
+    "nome": "Corrado",
+    "cognome": "Zola",
+    "testoRecensione": "Location trascurata e piena di polvere.",
+    "idRistorante": "4",
+    "gradimento": 8,
+    "contrasto": 3
+  },
+  {
+    "id": "7e3af69e-e01c-4b45-b6ab-1aa7ffee0ce6",
+    "nome": "Bernardo",
+    "cognome": "Semitecolo",
+    "testoRecensione": "Va bene per una volta, non diventera il mio preferito.",
+    "idRistorante": "3",
+    "gradimento": 1,
+    "contrasto": 0
+  },
+  {
+    "id": "c520b0c3-999e-45e1-ac30-751b38c4d833",
+    "nome": "Calcedonio",
+    "cognome": "Greco",
+    "testoRecensione": "Servizio impeccabile e veloce, consigliatissimo!",
+    "idRistorante": "1",
+    "gradimento": 7,
+    "contrasto": 8
+  },
+  {
+    "id": "70bb4266-d028-4763-b34d-27602af85052",
+    "nome": "Lidia",
+    "cognome": "Maffei",
+    "testoRecensione": "Il vino era buono, il resto dimenticabile.",
+    "idRistorante": "6",
+    "gradimento": 9,
+    "contrasto": 3
+  },
+  {
+    "id": "366756ba-3568-4bc1-a2eb-d3b6851d5980",
+    "nome": "Giovanni",
+    "cognome": "Ricciardi",
+    "testoRecensione": "Un po' caro per essere una trattoria alla mano.",
+    "idRistorante": "3",
+    "gradimento": 8,
+    "contrasto": 10
+  },
+  {
+    "id": "745c2fe7-da09-464f-bb02-00618bbf36a9",
+    "nome": "Enrico",
+    "cognome": "Baglioni",
+    "testoRecensione": "I piatti sono arrivati caldi e in tempi rapidissimi.",
+    "idRistorante": "3",
+    "gradimento": 3,
+    "contrasto": 4
+  },
+  {
+    "id": "7315cfcb-86cb-4819-bccc-735250a31f16",
+    "nome": "Federigo",
+    "cognome": "Canetta",
+    "testoRecensione": "Ingredienti chiaramente surgelati e spacciati per freschi.",
+    "idRistorante": "1",
+    "gradimento": 5,
+    "contrasto": 4
+  },
+  {
+    "id": "76aabd98-7b15-4065-a59c-f53f7d0f2316",
+    "nome": "Lolita",
+    "cognome": "Maggioli",
+    "testoRecensione": "Non so se ci tornerei, ci sono posti migliori in zona.",
+    "idRistorante": "5",
+    "gradimento": 10,
+    "contrasto": 6
+  },
+  {
+    "id": "8347852e-f885-4e8a-9a44-c5ab81afc3f6",
+    "nome": "Tina",
+    "cognome": "Morrocco",
+    "testoRecensione": "Frittura di pesce leggera e non unta, ottima.",
+    "idRistorante": "5",
+    "gradimento": 0,
+    "contrasto": 6
+  },
+  {
+    "id": "a0c44ee4-ebce-40a8-8bcb-f0003d22f262",
+    "nome": "Umberto",
+    "cognome": "Verdone",
+    "testoRecensione": "Senza dubbio il miglior ristorante della citt\u00e0.",
+    "idRistorante": "4",
+    "gradimento": 3,
+    "contrasto": 7
+  },
+  {
+    "id": "0805a3d4-3f34-446e-b826-9f10db816449",
+    "nome": "Luciana",
+    "cognome": "Corradi",
+    "testoRecensione": "Non hanno rispettato la mia allergia nonostante l'avessi segnalata.",
+    "idRistorante": "4",
+    "gradimento": 10,
+    "contrasto": 10
+  },
+  {
+    "id": "b86a6131-07b6-4fb1-9be5-a642ba77172b",
+    "nome": "Dina",
+    "cognome": "Petrucci",
+    "testoRecensione": "Servizio disorganizzato, hanno sbagliato le ordinazioni tre volte.",
+    "idRistorante": "1",
+    "gradimento": 4,
+    "contrasto": 1
+  },
+  {
+    "id": "6419cbbb-151e-4910-b17b-ad0e6c51425a",
+    "nome": "Guarino",
+    "cognome": "Favata",
+    "testoRecensione": "Se potessi dare zero stelle lo farei.",
+    "idRistorante": "2",
+    "gradimento": 7,
+    "contrasto": 9
+  },
+  {
+    "id": "90ca32fe-f5ed-42bf-9c56-fac25678cdd5",
+    "nome": "Ramona",
+    "cognome": "Dossetti",
+    "testoRecensione": "Non \u00e8 stato un disastro, ma nemmeno un successo.",
+    "idRistorante": "4",
+    "gradimento": 2,
+    "contrasto": 2
+  },
+  {
+    "id": "77982df8-dd11-4c15-9ed4-47713969ffb5",
+    "nome": "Simonetta",
+    "cognome": "Toninelli",
+    "testoRecensione": "Ingredienti chiaramente surgelati e spacciati per freschi.",
+    "idRistorante": "3",
+    "gradimento": 6,
+    "contrasto": 1
+  },
+  {
+    "id": "e952a165-940e-4bb0-8030-a29860edfc17",
+    "nome": "Pomponio",
+    "cognome": "Pacomio",
+    "testoRecensione": "Personale scortese e poco attento alle esigenze del cliente.",
+    "idRistorante": "5",
+    "gradimento": 9,
+    "contrasto": 8
+  },
+  {
+    "id": "25aa14d8-bf69-4e83-82ed-b415928ae040",
+    "nome": "Rosario",
+    "cognome": "Luna",
+    "testoRecensione": "Il personale correva troppo, mettendoci ansia.",
+    "idRistorante": "2",
+    "gradimento": 5,
+    "contrasto": 8
   }
-
-  
 ]
