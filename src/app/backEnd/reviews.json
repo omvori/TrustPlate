@@ -898,5 +898,14 @@
     "idRistorante": "2",
     "gradimento": 5,
     "contrasto": 8
+  },
+  {
+    "id": "2f6a796a-aec1-49b1-9c9e-d4cee77b3ee2",
+    "nome": "Marcello",
+    "cognome": "aaa",
+    "testoRecensione": "aaa",
+    "idRistorante": "2",
+    "gradimento": 0,
+    "contrasto": 0
   }
 ]

@@ -68,19 +68,22 @@ export class PaginaRistoranti implements OnInit{
     this.contenutoAi = '';
 
     const testoRecensioni = this.ristoReview.map((r,index)=>{
-      return `${index + 1}) Cliente: ${r.nome} - Dice: "${r.testoRecensione}`;
+      return `${index + 1}) ${r.testoRecensione}`;
     }).join('\n');
 
-    const promptTemplate = `Sei un assistente che analizza la reputazione dei ristoranti.
+    const promptTemplate = `Sei un analista esperto e conciso di recensioni.
       Ecco un elenco di recensioni reali:
-      
+
       ${testoRecensioni}
-      
+
       Compito:
-      1. Sintetizza l'opinione generale.
-      2. Elenca eventuali problemi gravi (come allergie non rispettate o servizio scadente).
-      3. Dai un giudizio complessivo basato su queste opinioni.
-    `;
+      ## Descrivi l'opinione generale in una frase di 5 righe massimo.Elencando eventuali problemi gravi (es. igiene, allergie) usando un elenco puntato (es. •problema numero 1). Se non ce ne sono, scrivi "Nessuno".
+      ## Valutazione: Assegna un voto da 1 a 5 stelle usando l'emoji ⭐.
+
+      Vincoli:
+      - Sii moderatamente sintetico.
+      - Non usare frasi introduttive o di chiusura (vai dritto al punto).`;
+      
     console.log("prompt inviato: ", promptTemplate);
 
     this.ollamaService.generate(promptTemplate).subscribe({

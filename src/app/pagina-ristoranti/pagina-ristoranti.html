@@ -1,41 +1,130 @@
 <div class="page-wrapper">
   <app-toolbar></app-toolbar>
 
-
   <div class="main-content">
     <div style="padding:20px; text-align:center;">
         
         @switch (ristoranteId) {
             @case ("1") {
+              <h1 class="nome-ristorante">Da Gustave</h1>
+              <button class="ai-button" (click)="generateComment()" [disabled]="isLoadingAi || ristoReview.length === 0">
+                 Genera un riassunto delle recensioni 
+                 <svg aria-hidden="true" viewBox="0 0 16 16" class="stellina-ai" width="20px" height="20px" style="margin-left:5px" role="img"><path d="M2 1v2H0v1h2v2h1V4h2V3H3V1H2Zm0 9v2H0v1h2v2h1v-2h2v-1H3v-2H2Zm2.875-1.438L8 9.75l1.188 3.125.562 1.375.563-1.375L11.5 9.75l3.125-1.188L16 8l-1.375-.563L11.5 6.25l-1.188-3.125L9.75 1.75l-.563 1.375L8 6.25 4.875 7.438 3.5 8l1.375.563Zm4.031.75L8.75 9l-.313-.156L6 8l2.438-.844L8.75 7l.156-.313.844-2.437.844 2.438.156.312.313.156L13.5 8l-2.438.844L10.75 9l-.156.313-.844 2.437-.844-2.438Z"></path></svg>
+              </button>
+              <div *ngIf="isLoadingAi" class="progress-spinner" style="display: flex; justify-content: center; margin: 15px 0;">
+                  <app-progress-spinner></app-progress-spinner>
+              </div>
+              <div *ngIf="contenutoAi && !isLoadingAi" style="margin-top: 15px;">
+                <div class="titolo-riepilogo">
+                  <h1>Riepilogo delle recensioni</h1>
+                  <h3 style="font-style: italic; color: grey; font-weight: 600;">Basato sulle recensioni, creato con l'IA di ollama</h3>
+                </div>
+                <div class="riepilogo-ai-content">
+                   <p class="contenuto-ai">{{ contenutoAi }}</p>
+                </div>
+              </div>
+            }
               
-                <h1>Da Gustave</h1>
-                <p>Genera un riassunto sull'umore del ristorante da parte dei clienti</p>
-                <button (click)="generateComment()" [disabled]="isLoadingAi || ristoReview.length === 0">Premi per vincere un iphone 14promax</button>
-                <div *ngIf="contenutoAi" style="margin-top: 15px;">
-                  <strong>Risultato:</strong>
-                    <p style="white-space: pre-wrap;">{{ contenutoAi }}</p>
-                 </div>
-            }
             @case ("2") {
-                <h1>Lune's Dream</h1>
-                <p>Locale moderno fusion che combina cucina asiatica e mediterranea. Lune's Dream offre un'esperienza culinaria unica con piatti creativi e presentazione artistica.</p>
+              <h1 class="nome-ristorante">Lune's Dream</h1>
+              <button class="ai-button" (click)="generateComment()" [disabled]="isLoadingAi || ristoReview.length === 0">
+                 Genera un riassunto delle recensioni 
+                 <svg aria-hidden="true" viewBox="0 0 16 16" class="stellina-ai" width="20px" height="20px" style="margin-left:5px" role="img"><path d="M2 1v2H0v1h2v2h1V4h2V3H3V1H2Zm0 9v2H0v1h2v2h1v-2h2v-1H3v-2H2Zm2.875-1.438L8 9.75l1.188 3.125.562 1.375.563-1.375L11.5 9.75l3.125-1.188L16 8l-1.375-.563L11.5 6.25l-1.188-3.125L9.75 1.75l-.563 1.375L8 6.25 4.875 7.438 3.5 8l1.375.563Zm4.031.75L8.75 9l-.313-.156L6 8l2.438-.844L8.75 7l.156-.313.844-2.437.844 2.438.156.312.313.156L13.5 8l-2.438.844L10.75 9l-.156.313-.844 2.437-.844-2.438Z"></path></svg>
+              </button>
+              <div *ngIf="isLoadingAi" class="progress-spinner" style="display: flex; justify-content: center; margin: 15px 0;">
+                  <app-progress-spinner></app-progress-spinner>
+              </div>
+              <div *ngIf="contenutoAi && !isLoadingAi" style="margin-top: 15px;">
+                <div class="titolo-riepilogo">
+                  <h1>Riepilogo delle recensioni</h1>
+                  <h3 style="font-style: italic; color: grey; font-weight: 600;">Basato sulle recensioni, creato con l'IA di ollama</h3>
+                </div>
+                <div class="riepilogo-ai-content">
+                   <p class="contenuto-ai">{{ contenutoAi }}</p>
+                </div>
+              </div>
             }
+            
             @case ("3") {
-                <h1>Maelle'Sorrow</h1>
-                <p>Trattoria rustica specializzata in carni alla griglia e piatti della tradizione contadina. Maelle's Sorrow ha un'atmosfera calda e autentica con prodotti a km zero.</p>
+              <h1 class="nome-ristorante">Maelle'Sorrow</h1>
+              <button class="ai-button" (click)="generateComment()" [disabled]="isLoadingAi || ristoReview.length === 0">
+                 Genera un riassunto delle recensioni 
+                 <svg aria-hidden="true" viewBox="0 0 16 16" class="stellina-ai" width="20px" height="20px" style="margin-left:5px" role="img"><path d="M2 1v2H0v1h2v2h1V4h2V3H3V1H2Zm0 9v2H0v1h2v2h1v-2h2v-1H3v-2H2Zm2.875-1.438L8 9.75l1.188 3.125.562 1.375.563-1.375L11.5 9.75l3.125-1.188L16 8l-1.375-.563L11.5 6.25l-1.188-3.125L9.75 1.75l-.563 1.375L8 6.25 4.875 7.438 3.5 8l1.375.563Zm4.031.75L8.75 9l-.313-.156L6 8l2.438-.844L8.75 7l.156-.313.844-2.437.844 2.438.156.312.313.156L13.5 8l-2.438.844L10.75 9l-.156.313-.844 2.437-.844-2.438Z"></path></svg>
+              </button>
+              <div *ngIf="isLoadingAi" class="progress-spinner" style="display: flex; justify-content: center; margin: 15px 0;">
+                  <app-progress-spinner></app-progress-spinner>
+              </div>
+              <div *ngIf="contenutoAi && !isLoadingAi" style="margin-top: 15px;">
+                <div class="titolo-riepilogo">
+                  <h1>Riepilogo delle recensioni</h1>
+                  <h3 style="font-style: italic; color: grey; font-weight: 600;">Basato sulle recensioni, creato con l'IA di ollama</h3>
+                </div>
+                <div class="riepilogo-ai-content">
+                   <p class="contenuto-ai">{{ contenutoAi }}</p>
+                </div>
+              </div>
             }
+            
             @case ("4") {
-                <h1>Sciel And Cariddi</h1>
-                <p>Ristorante di pesce con vista mare, famoso per il crudo di qualità e le zuppe di mare. Sciel and Cariddi utilizza solo pescato del giorno.</p>
+              <h1 class="nome-ristorante">Sciel And Cariddi</h1>
+              <button class="ai-button" (click)="generateComment()" [disabled]="isLoadingAi || ristoReview.length === 0">
+                 Genera un riassunto delle recensioni 
+                 <svg aria-hidden="true" viewBox="0 0 16 16" class="stellina-ai" width="20px" height="20px" style="margin-left:5px" role="img"><path d="M2 1v2H0v1h2v2h1V4h2V3H3V1H2Zm0 9v2H0v1h2v2h1v-2h2v-1H3v-2H2Zm2.875-1.438L8 9.75l1.188 3.125.562 1.375.563-1.375L11.5 9.75l3.125-1.188L16 8l-1.375-.563L11.5 6.25l-1.188-3.125L9.75 1.75l-.563 1.375L8 6.25 4.875 7.438 3.5 8l1.375.563Zm4.031.75L8.75 9l-.313-.156L6 8l2.438-.844L8.75 7l.156-.313.844-2.437.844 2.438.156.312.313.156L13.5 8l-2.438.844L10.75 9l-.156.313-.844 2.437-.844-2.438Z"></path></svg>
+              </button>
+              <div *ngIf="isLoadingAi" class="progress-spinner" style="display: flex; justify-content: center; margin: 15px 0;">
+                  <app-progress-spinner></app-progress-spinner>
+              </div>
+              <div *ngIf="contenutoAi && !isLoadingAi" style="margin-top: 15px;">
+                <div class="titolo-riepilogo">
+                  <h1>Riepilogo delle recensioni</h1>
+                  <h3 style="font-style: italic; color: grey; font-weight: 600;">Basato sulle recensioni, creato con l'IA di ollama</h3>
+                </div>
+                <div class="riepilogo-ai-content">
+                   <p class="contenuto-ai">{{ contenutoAi }}</p>
+                </div>
+              </div>
             }
+            
             @case ("5") {
-                <h1>Verso's Piano</h1>
-                <p>Elegante ristorante con cucina raffinata e sala da concerto. Verso's Piano combina alta cucina con performance musicali dal vivo.</p>
+              <h1 class="nome-ristorante">Verso's Piano</h1>
+              <button class="ai-button" (click)="generateComment()" [disabled]="isLoadingAi || ristoReview.length === 0">
+                 Genera un riassunto delle recensioni 
+                 <svg aria-hidden="true" viewBox="0 0 16 16" class="stellina-ai" width="20px" height="20px" style="margin-left:5px" role="img"><path d="M2 1v2H0v1h2v2h1V4h2V3H3V1H2Zm0 9v2H0v1h2v2h1v-2h2v-1H3v-2H2Zm2.875-1.438L8 9.75l1.188 3.125.562 1.375.563-1.375L11.5 9.75l3.125-1.188L16 8l-1.375-.563L11.5 6.25l-1.188-3.125L9.75 1.75l-.563 1.375L8 6.25 4.875 7.438 3.5 8l1.375.563Zm4.031.75L8.75 9l-.313-.156L6 8l2.438-.844L8.75 7l.156-.313.844-2.437.844 2.438.156.312.313.156L13.5 8l-2.438.844L10.75 9l-.156.313-.844 2.437-.844-2.438Z"></path></svg>
+              </button>
+              <div *ngIf="isLoadingAi" class="progress-spinner" style="display: flex; justify-content: center; margin: 15px 0;">
+                  <app-progress-spinner></app-progress-spinner>
+              </div>
+              <div *ngIf="contenutoAi && !isLoadingAi" style="margin-top: 15px;">
+                <div class="titolo-riepilogo">
+                  <h1>Riepilogo delle recensioni</h1>
+                  <h3 style="font-style: italic; color: grey; font-weight: 600;">Basato sulle recensioni, creato con l'IA di ollama</h3>
+                </div>
+                <div class="riepilogo-ai-content">
+                   <p class="contenuto-ai">{{ contenutoAi }}</p>
+                </div>
+              </div>
             }
+            
             @case ("6") {
-                <h1>Esquie's Rocks</h1>
-                <p>Pub-gastronomico con birre artigianali e piatti robusti. Esquie's Rocks è il luogo ideale per serate informali con amici e musica rock.</p>
+              <h1 class="nome-ristorante">Esquie's Rocks</h1>
+              <button class="ai-button" (click)="generateComment()" [disabled]="isLoadingAi || ristoReview.length === 0">
+                 Genera un riassunto delle recensioni 
+                 <svg aria-hidden="true" viewBox="0 0 16 16" class="stellina-ai" width="20px" height="20px" style="margin-left:5px" role="img"><path d="M2 1v2H0v1h2v2h1V4h2V3H3V1H2Zm0 9v2H0v1h2v2h1v-2h2v-1H3v-2H2Zm2.875-1.438L8 9.75l1.188 3.125.562 1.375.563-1.375L11.5 9.75l3.125-1.188L16 8l-1.375-.563L11.5 6.25l-1.188-3.125L9.75 1.75l-.563 1.375L8 6.25 4.875 7.438 3.5 8l1.375.563Zm4.031.75L8.75 9l-.313-.156L6 8l2.438-.844L8.75 7l.156-.313.844-2.437.844 2.438.156.312.313.156L13.5 8l-2.438.844L10.75 9l-.156.313-.844 2.437-.844-2.438Z"></path></svg>
+              </button>
+              <div *ngIf="isLoadingAi" class="progress-spinner" style="display: flex; justify-content: center; margin: 15px 0;">
+                  <app-progress-spinner></app-progress-spinner>
+              </div>
+              <div *ngIf="contenutoAi && !isLoadingAi" style="margin-top: 15px;">
+                <div class="titolo-riepilogo">
+                  <h1>Riepilogo delle recensioni</h1>
+                  <h3 style="font-style: italic; color: grey; font-weight: 600;">Basato sulle recensioni, creato con l'IA di ollama</h3>
+                </div>
+                <div class="riepilogo-ai-content">
+                   <p class="contenuto-ai">{{ contenutoAi }}</p>
+                </div>
+              </div>
             }
+            
             @default {
                 <h1>Ristorante</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas provident nisi rerum aliquam ea explicabo quisquam similique soluta culpa sapiente, cupiditate quae veniam accusantium placeat vel veritatis sed mollitia deserunt!</p>
@@ -43,7 +132,9 @@
         }
         
         <p>ID ristorante : {{ristoranteId}}<p>
-        
+
+          
+          <!--*-----------------RECENSIONI----------------->
         
         <div animate.enter="enter-animation" style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px;">
         @switch (ristoranteId) {
