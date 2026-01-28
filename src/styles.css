@@ -58,3 +58,8 @@ html,body {
 .btn-primary:active {
   background-color: #212020;
 }
+
+.mat-mdc-progress-spinner circle {
+  stroke: #4d3e77;
+
+}

@@ -25,6 +25,8 @@ import { LikeDislikeComponent } from './like-dislike-component/like-dislike-comp
 import { Toolbar } from './toolbar/toolbar';
 import { Footer } from './footer/footer';
 import { provideHttpClient } from '@angular/common/http';
+import { ProgressSpinner } from './progress-spinner/progress-spinner';
+import { MatProgressSpinner } from "@angular/material/progress-spinner";
 
 @NgModule({
   declarations: [
@@ -37,7 +39,8 @@ import { provideHttpClient } from '@angular/common/http';
     HomeComponent,
     LikeDislikeComponent,
     Toolbar,
-    Footer
+    Footer,
+    ProgressSpinner
   ],
   imports: [
     BrowserModule,
@@ -55,7 +58,8 @@ import { provideHttpClient } from '@angular/common/http';
     MatMenuModule,
     MatButtonModule,
     MatFormFieldModule,
-    RouterModule
+    RouterModule,
+    MatProgressSpinner
 ],
   providers: [ServizioProva, 
     provideBrowserGlobalErrorListeners(),provideHttpClient()

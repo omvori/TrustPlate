@@ -54,7 +54,60 @@
 
     
 }
+.riepilogo-ai-content{
+  max-width: 45%; 
+  margin: 0 auto; 
+  padding: 20px;
+  border: 1px solid #ddd; 
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  min-height: 150px; 
+  overflow-y: auto; 
+}
 
+@media (max-width: 992px){
+  .riepilogo-ai-content{
+  max-width: 60%; 
+  margin: 0 auto; 
+  padding: 20px;
+  border: 1px solid #ddd; 
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  min-height: 150px; 
+  overflow-y: auto; 
+}
+
+
+}
+
+
+
+.contenuto-ai{
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+  text-align: justify;
+  margin: 0;
+  padding: 10px;
+  white-space: pre-wrap; 
+}
+
+.nome-ristorante{
+  font-size:50px;
+  font-weight: 44;
+  text-align:center; 
+  line-height:1.5em; 
+  padding-bottom:45px; 
+  padding-top: 45px;
+  font-family:"Playfair Display", serif; 
+  text-transform:uppercase;
+  letter-spacing: 2px; 
+  color:#111;
+    
+}
 .recensioni-cards:hover{
   transform: scale(1.1);
 }
@@ -90,3 +143,28 @@ html, body {
   max-height: 150px;
 }
 
+.ai-button{
+  padding: 8px 30px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  min-width: 150px;
+  height: 40px;
+  background-color: #ffffff;
+  color: rgb(70, 58, 141);
+  border: none;
+  cursor: pointer;
+  transition: transform .2s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+.ai-button:hover{
+  background-color: rgb(88, 42, 88);
+  color:white;
+  transform: scale(1.1);
+}
+
+.stellina-ai{
+  fill: currentColor;
+}
