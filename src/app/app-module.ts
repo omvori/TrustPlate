@@ -27,6 +27,8 @@ import { Footer } from './footer/footer';
 import { provideHttpClient } from '@angular/common/http';
 import { ProgressSpinner } from './progress-spinner/progress-spinner';
 import { MatProgressSpinner } from "@angular/material/progress-spinner";
+import { Chips } from './chips/chips';
+import {MatChipsModule} from '@angular/material/chips';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,8 @@ import { MatProgressSpinner } from "@angular/material/progress-spinner";
     LikeDislikeComponent,
     Toolbar,
     Footer,
-    ProgressSpinner
+    ProgressSpinner,
+    Chips
   ],
   imports: [
     BrowserModule,
@@ -59,7 +62,8 @@ import { MatProgressSpinner } from "@angular/material/progress-spinner";
     MatButtonModule,
     MatFormFieldModule,
     RouterModule,
-    MatProgressSpinner
+    MatProgressSpinner,
+    MatChipsModule
 ],
   providers: [ServizioProva, 
     provideBrowserGlobalErrorListeners(),provideHttpClient()

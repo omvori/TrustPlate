@@ -1,0 +1,8 @@
+<mat-chip-set aria-label="Humor">
+  <div *ngIf="isLoadingChips">
+    <app-progress-spinner></app-progress-spinner>
+  </div>
+  <mat-chip *ngIf="!isLoadingChips">
+      {{chipsAi}}
+  </mat-chip>
+</mat-chip-set>

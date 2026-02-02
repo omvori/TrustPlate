@@ -3,7 +3,8 @@
 
   <div class="main-content">
     <div style="padding:20px; text-align:center;">
-        
+      
+       
         @switch (ristoranteId) {
             @case ("1") {
               <h1 class="nome-ristorante">Da Gustave</h1>
@@ -21,6 +22,11 @@
                 </div>
                 <div class="riepilogo-ai-content">
                    <p class="contenuto-ai">{{ contenutoAi }}</p>
+
+                   <div *ngIf="contenutoAi">
+                     <app-chips [contenutoAi]="contenutoAi"></app-chips>
+                   </div>
+                   
                 </div>
               </div>
             }
