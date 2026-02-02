@@ -5,12 +5,23 @@ from flask import Flask, jsonify, request
 import uuid
 from faker import Faker
 import random
+import spacy
+from spacy.lang.it.examples import sentences
 
 
 app = Flask(__name__)
 CORS(app)
 
 review_list = []
+
+
+#*NLP (natural language processing) delle recensioni# 
+
+nlp = spacy.load("it_core_news_sm")
+
+
+1
+
 
 @app.route('/api/isUp',methods=['GET'])
 def isUp():
@@ -297,6 +308,7 @@ def seed_data(numero):
     ]
 
     umori = positive + neutre + negative
+
 
     for _ in range(numero):
         rec = {

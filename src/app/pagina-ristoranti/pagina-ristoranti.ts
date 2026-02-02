@@ -1,4 +1,4 @@
-import { Component, OnInit,Input, ChangeDetectorRef } from '@angular/core';
+import { Component, OnInit,Input, ChangeDetectorRef} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { FlaskServer } from '../services/flask-server';
 import { OllamaService } from '../services/ollama-service';
@@ -86,13 +86,17 @@ export class PaginaRistoranti implements OnInit{
       
     console.log("prompt inviato: ", promptTemplate);
 
-    this.ollamaService.generate(promptTemplate).subscribe({
+    this.ollamaService.generate(promptTemplate, 'gemma3:4b',11434).subscribe({
       next:(data)=>{
         this.contenutoAi = data.response;
         this.isLoadingAi = false;
         this.cdr.detectChanges();
       }
     });
+
+
+
+    
 
 
   }
