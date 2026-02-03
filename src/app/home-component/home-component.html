@@ -1,6 +1,16 @@
-<div class="container_app">
+<section class="hero-section" *ngIf="showHero">
+  <div class="hero-content">
+    <h1 class="hero-title">TrustPlate</h1>
+    <p class="hero-subtitle">recensisci i tuoi ristoranti preferiti, o consulta le  loro recensioni da tutto il mondo</p>
+    <button class="scroll-btn" (click)="scrollToMain()" >▼</button>
+      
+  </div>
+</section>
 
-  
+
+
+
+<div class="container_app" id="main-content">
     <header class="header">
       <div class="header-title-box">
         <div class="box-text-under-title">
@@ -17,7 +27,6 @@
    <div class="content">
      <app-input-card (newReview)="addReview($event)"></app-input-card>
      <app-cards-to-review [reviews]="reviews"> </app-cards-to-review>
-    </div>
 
   </div>
   <!--footer-->

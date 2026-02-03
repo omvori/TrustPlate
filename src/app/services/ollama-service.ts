@@ -17,7 +17,7 @@ ollama serve */
 })
 export class OllamaService {
   
-  private apiUrl = 'http://localhost:11434/api/generate';
+  /**private apiUrl = 'http://localhost:11434/api/generate';**/
 
   constructor(private http: HttpClient){}
 

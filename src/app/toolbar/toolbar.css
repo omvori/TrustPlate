@@ -48,7 +48,7 @@
 
 
 mat-toolbar {
-  background-color: rgb(77, 52, 77);  color: white;
+  background-color: #1b1a1b;  color: white;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   height:110px;
 }
