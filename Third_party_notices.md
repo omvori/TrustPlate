@@ -22,15 +22,26 @@ It is not a substitute for legal advice.
 
 Citation:
 ```bibtex
-@misc{zaratiana2025gliner2efficientmultitaskinformation,
-  title={GLiNER2: An Efficient Multi-Task Information Extraction System
-         with Schema-Driven Interface},
-  author={Urchade Zaratiana and Gil Pasternak and Oliver Boyd and
-          George Hurn-Maloney and Ash Lewis},
-  year={2025},
-  eprint={2507.18546},
-  archivePrefix={arXiv},
-  url={https://arxiv.org/abs/2507.18546}
+@inproceedings{zaratiana-etal-2025-gliner2,
+    title = "{GL}i{NER}2: Schema-Driven Multi-Task Learning for Structured Information Extraction",
+    author = "Zaratiana, Urchade  and
+      Pasternak, Gil  and
+      Boyd, Oliver  and
+      Hurn-Maloney, George  and
+      Lewis, Ash",
+    editor = {Habernal, Ivan  and
+      Schulam, Peter  and
+      Tiedemann, J{\"o}rg},
+    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing: System Demonstrations",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.emnlp-demos.10/",
+    pages = "130--140",
+    ISBN = "979-8-89176-334-0",
+    abstract = "Information extraction (IE) is fundamental to numerous NLP applications, yet existing solutions often require specialized models for different tasks or rely on computationally expensive large language models. We present GLiNER2, a unified framework that enhances the original GLiNER architecture to support named entity recognition, text classification, and hierarchical structured data extraction within a single efficient model. Built on a fine-tuned encoder architecture, GLiNER2 maintains CPU efficiency and compact size while introducing multi-task composition through an intuitive schema-based interface. Our experiments demonstrate competitive performance across diverse IE tasks with substantial improvements in deployment accessibility compared to LLM-based alternatives. We release GLiNER2 as an open-source library available through pip, complete with pre-trained models and comprehensive documentation."
+}
 }
 ```
 
